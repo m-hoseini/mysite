@@ -1,0 +1,9 @@
+name: "mho-website"
+output_dir: "."
+navbar:
+  title: "Mohammad Hoseini Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
