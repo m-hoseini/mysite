@@ -1,5 +1,8 @@
 ---
 title: "CV"
+output:
+  html_document:
+    df_print: paged
 ---
 
 __Mohammad Hoseini__
@@ -38,4 +41,25 @@ __Mohammad Hoseini__
 - Microeconomics for IBA, Tilburg University, 2015
 - Macroeconomics for IBA, Tilburg University, 2011-2014
 - Finance, Growth and Development, Sharif University of Technology, January 2012
+
+
+## Refree experience
+- Journal of Public Economics, Journal of Economic Growth,  Journal of Planning and Budgeting
+
+## Conference/Seminar Presentation
+- Faculty Collaborative Seminar, Jinan University, Guangzhou, China, June 2018
+- Second conference on Iran's economy, Tehran, December 2017 
+- First international conference on labor market studies (also a member of scientific committee), Tehran, September 2017 
+- The Shadow Economy, Tax Evasion and Informal Labor, Warsaw, July 2017
+- Financial Sector Developments and the Performance of Entrepreneurial Firms, 7th European Banking Center Conference, October 2015
+- Design and evaluation of tax policy, Institut d'Economia de Barcelona, June 2015  
+- Workshop on Public Economics, Uppsala, May 2015 
+- Entrepreneurial Finance, Innovation and Growth, CEPR-BOF conference, Helsinki 2014 
+- EBC junior fellow workshop, Tilburg, November 2014 
+- Reforming the Public Sector, CESifo Venice Summer Institute, July 2014
+- Tax Policy and the Activities of Multinational Firms, Tubingen University, June 2014
+- Taxation, social norms and compliance, CEBID Nuremberg, March 2014 
+- ENTER PhD jamboree, Stockholm, March 2014 
+- 4th, 5th, and 7th Tilburg Development Economics Workshop, 2013, 2014, 2016 
+- Tilburg University internal seminars, 2011-2013 
 
