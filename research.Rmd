@@ -1,0 +1,40 @@
+---
+title: "Research"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## working papers
+- __Finance and Poverty: Evidence from India,__ with Meghana Ayyagari and Thorsten Beck, <http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2275150>
+  - Vox column summary: <http://www.voxeu.org/article/migrating-out-poverty-role-finance>
+
+- __Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages,__ <http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2291867>
+
+
+- __Informality and Access to Finance: Evidence from India,__ with Thorsten Beck, <http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2491466>
+
+- __Misreporting of VAT and Optimal Enforcement,__ <http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505998>
+
+- __Trade credit and access to finance of retailers in Ethiopia,__ with Thorsten Beck and Burak Uras. DFID Working Paper.
+
+- __VAT reform, Distortions, and Informality: Evidence from Indian States,__ with Oceane Briand.
+
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

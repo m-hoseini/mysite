@@ -2,4 +2,40 @@
 title: "CV"
 ---
 
-Why I am awesome. 
+__Mohammad Hoseini__
+
+- __Address:__ Room 308, IMPS, Asgari 6, Niavaran, Tehran, Iran,  __Zip code:__ 1978911114,   
+- __Email:__ mo.hoseini at imps.ac.ir 
+
+
+- __Primary fields:__ Development Economics, Public economics 
+
+    	
+## Professional experience
+- _2016-present_ __Assistant Professor of Economics__, Institute for Management and Planning Studies (IMPS).
+- _2014-2016_ __Post-doctoral Researcher__, Tilburg University (in the DFID-funded projection on productivity growth in developing countries).
+
+## Education
+- 2011-2014 __Ph.D. in Economics__, Tilburg University.
+- 2009-2011 __Research Master (M.Phil) in Economics__, Tilburg University.
+- 2006-2009 __M.Sc. in Economics__, Sharif University of Technology.
+- 2002-2006 __B.Sc. in Electrical Engineering__, Sharif University of Technology, Tehran, Iran.
+
+## Working papers
+- Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck
+- Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages
+- Informality and Access to Finance: Evidence from India, with Thorsten Beck
+- Misreporting of VAT and Optimal Enforcement
+- Trade credit and access to finance of retailers in Ethiopia, with Thorsten Beck and Burak Uras. DFID Working Paper.
+- VAT reform, Distortions, and Informality: Evidence from Indian States, with Oceane Briand.
+
+
+## Teaching experience
+- Development Economics (PhD),  IMPS, 2017-2018	
+- Development Economics (master), IMPS, 2017	
+- Microeconomics (master),  IMPS, 2017
+- Advanced Microeconomics (PhD),  IMPS, 2016
+- Microeconomics for IBA, Tilburg University, 2015
+- Macroeconomics for IBA, Tilburg University, 2011-2014
+- Finance, Growth and Development, Sharif University of Technology, January 2012
+

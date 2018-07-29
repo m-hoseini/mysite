@@ -1,9 +1,19 @@
 name: "mho-website"
 output_dir: "."
 navbar:
-  title: "Mohammad Hoseini Website"
+  title: "Mohammad Hoseini"
   left:
     - text: "Home"
       href: index.html
-    - text: "About Me"
+    - text: "CV"
       href: about.html
+    - text: "Research"
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+    - text: "Farsi papers/notes"
+      href: notes.html
+output: 
+ html_document:
+  theme: flatly
+  css: style.css
