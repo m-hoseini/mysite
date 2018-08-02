@@ -13,7 +13,12 @@ navbar:
       href: teaching.html
     - text: "Farsi papers/notes"
       href: notes.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:mo.hoseini@imps.ac.ir
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/mohammad-hoseini-69420830/
 output: 
  html_document:
-  theme: flatly
+  theme: journal
   css: style.css

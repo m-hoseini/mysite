@@ -3,12 +3,22 @@ title: "Teaching"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# {.tabset .tabset-pills .tabset-pills .tabset-pills}
 
-## Microeconomics
+## Advanced Microeconomics I 
+- [Preference and choice](https://www.dropbox.com/s/jbd8thpuhzg57ao/MicroPhD1.pdf?dl=1)
+- [Consumer choice]()
+- [Classical demand theory]()
+- [Aggregate demand]()
+- [Production]()
+- [Choice under uncertainty]()     
 
-## Development economics
+## Development economics 
+
+- [syllabus](https://www.dropbox.com/s/iurbfjuotqpiofy/Course%20syllabus.docx?dl=1)    
+- [slides](https://www.dropbox.com/s/ir6kgh9cm72pxnf/DevPhD.pdf?dl=1)
+
+## Public economics
 
 ## R & STATA
+

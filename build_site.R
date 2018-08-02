@@ -6,3 +6,6 @@ setwd("C:/Users/Mohammad/Documents/GitHub/mysite")
 
 #render your sweet site. 
 rmarkdown::render_site()
+
+
+# for more themes see: https://rstudio.github.io/shinythemes/
