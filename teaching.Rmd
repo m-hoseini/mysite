@@ -17,6 +17,10 @@ output: html_document
 
 ### Master
 - [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
+- Consumer theory
+- Uncertainty
+- Theory of the Firm
+- Equilibrium in competitive market
 
 ## Development economics {.tabset .tabset-fade .tabset-fade}
 
