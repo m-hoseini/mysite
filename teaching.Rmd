@@ -16,6 +16,7 @@ output: html_document
 - [Choice under uncertainty]()   
 
 ### Master
+- [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
 
 ## Development economics {.tabset .tabset-fade .tabset-fade}
 
