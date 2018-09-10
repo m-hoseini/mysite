@@ -31,7 +31,7 @@ output: html_document
 ### Master
 - [Introduction](https://www.dropbox.com/s/l5ad5ahwdalxtq0/DevMSC1.pdf?dl=1)
 
-- Review of empirics:   [part 1](https://www.dropbox.com/s/c365wkv6zzsdgmi/DevMSC2.pdf?dl=1) ,   [part 2](https://www.dropbox.com/s/1phqcrvio89a3yt/DevMSC3.pdf?dl=1)
+- Review of empirics:   [part 1](https://www.dropbox.com/s/c365wkv6zzsdgmi/DevMSC2.pdf?dl=1) ,   [part 2](https://www.dropbox.com/s/1phqcrvio89a3yt/DevMSC3.pdf?dl=1) ,   [part 3](https://www.dropbox.com/s/24y3re79imafi9g/DevMSC4.pdf?dl=1)
 
 - Poverty:  [part 1](https://www.dropbox.com/s/ws2g7fish0l1x5d/DevMSC5.pdf?dl=1) ,   [part 2](https://www.dropbox.com/s/cjnrrr5k7hzmbo8/DevMSC6.pdf?dl=1)
 
@@ -44,6 +44,9 @@ output: html_document
 - [Resource curse](https://www.dropbox.com/s/q7s3z4vfgl8a7gn/DevMSC11.pdf?dl=1)
 
 ## Public economics
+- [syllabus](https://www.dropbox.com/s/srfpjiz1t5l19kx/Taxation%20syllabus.docx?dl=1)    
+
+
 
 ## Statistical softwares {.tabset .tabset-fade .tabset-fade}
 
