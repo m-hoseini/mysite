@@ -51,6 +51,7 @@ output: html_document
 ## Statistical softwares {.tabset .tabset-fade .tabset-fade}
 
 ### STATA
+- [Introduction](rstata.html)
 - [Exercise 1](https://www.dropbox.com/s/hem67p300cfgetj/Stata1.pdf?dl=1)
 - [Exercise 2](https://www.dropbox.com/s/528kdc375f2fepq/Stata2.pdf?dl=1)
 - [Exercise 3](https://www.dropbox.com/s/9hjyd2hv3n6t9to/Stata3.pdf?dl=1)
