@@ -9,7 +9,7 @@ output: html_document
 
 ### PhD 
 - [Preference and choice](https://www.dropbox.com/s/jbd8thpuhzg57ao/MicroPhD1.pdf?dl=1)
-- [Consumer choice]()
+- [Consumer choice]() 
 - [Classical demand theory]()
 - [Aggregate demand]()
 - [Production]()
@@ -17,7 +17,7 @@ output: html_document
 
 ### Master
 - [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
-- Consumer theory
+- Consumer theory [part 1](https://www.dropbox.com/s/620b88rab04h6dz/Consumer1.pdf?dl=1)
 - Uncertainty
 - Theory of the Firm
 - Equilibrium in competitive market
