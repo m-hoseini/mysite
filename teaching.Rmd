@@ -17,7 +17,7 @@ output: html_document
 
 ### Master
 - [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
-- Consumer theory [part 1](https://www.dropbox.com/s/620b88rab04h6dz/Consumer1.pdf?dl=1)
+- Consumer theory  [part 1](https://www.dropbox.com/s/620b88rab04h6dz/Consumer1.pdf?dl=1) | [part 2](https://www.dropbox.com/s/70okj0cdljjr9tw/consumer2.pdf?dl=1)
 - Uncertainty
 - Theory of the Firm
 - Equilibrium in competitive market
@@ -31,20 +31,20 @@ output: html_document
 ### Master
 - [Introduction](https://www.dropbox.com/s/l5ad5ahwdalxtq0/DevMSC1.pdf?dl=1)
 
-- Review of empirics:   [part 1](https://www.dropbox.com/s/c365wkv6zzsdgmi/DevMSC2.pdf?dl=1) ,   [part 2](https://www.dropbox.com/s/1phqcrvio89a3yt/DevMSC3.pdf?dl=1) ,   [part 3](https://www.dropbox.com/s/24y3re79imafi9g/DevMSC4.pdf?dl=1)
+- Review of empirics:   [part 1](https://www.dropbox.com/s/c365wkv6zzsdgmi/DevMSC2.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/1phqcrvio89a3yt/DevMSC3.pdf?dl=1) |   [part 3](https://www.dropbox.com/s/24y3re79imafi9g/DevMSC4.pdf?dl=1)
 
-- Poverty:  [part 1](https://www.dropbox.com/s/ws2g7fish0l1x5d/DevMSC5.pdf?dl=1) ,   [part 2](https://www.dropbox.com/s/cjnrrr5k7hzmbo8/DevMSC6.pdf?dl=1)
+- Poverty:  [part 1](https://www.dropbox.com/s/ws2g7fish0l1x5d/DevMSC5.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/cjnrrr5k7hzmbo8/DevMSC6.pdf?dl=1)
 
-- Labor market: [part 1](https://www.dropbox.com/s/wy8sk9rds6mflty/DevMSC13.pdf?dl=1) ,   [part 2](https://www.dropbox.com/s/9a5ofrtccalgrjy/DevMSC14.pdf?dl=1) ,  [part 3](https://www.dropbox.com/s/5kax9dwkxgdtbs8/DevMSC15.pdf?dl=1)
+- Labor market: [part 1](https://www.dropbox.com/s/wy8sk9rds6mflty/DevMSC13.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/9a5ofrtccalgrjy/DevMSC14.pdf?dl=1) |  [part 3](https://www.dropbox.com/s/5kax9dwkxgdtbs8/DevMSC15.pdf?dl=1)
 
-- Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) ,  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  , [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
+- Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
 - [Social capital](https://www.dropbox.com/s/g4d619hy0gc2ren/DevMSC10.pdf?dl=1)
 
 - [Resource curse](https://www.dropbox.com/s/q7s3z4vfgl8a7gn/DevMSC11.pdf?dl=1)
 
-## Public economics
-- [syllabus](https://www.dropbox.com/s/srfpjiz1t5l19kx/Taxation%20syllabus.docx?dl=1)    
+[//]: <> (## Public economics)
+[//]: <> (- [syllabus](https://www.dropbox.com/s/srfpjiz1t5l19kx/Taxation%20syllabus.docx?dl=1))    
 
 
 
@@ -52,9 +52,10 @@ output: html_document
 
 ### STATA
 - [Introduction](rstata.html)
-- [Exercise 1](https://www.dropbox.com/s/hem67p300cfgetj/Stata1.pdf?dl=1)
+
+[//]: <> (- [Exercise 1](https://www.dropbox.com/s/hem67p300cfgetj/Stata1.pdf?dl=1)
 - [Exercise 2](https://www.dropbox.com/s/528kdc375f2fepq/Stata2.pdf?dl=1)
-- [Exercise 3](https://www.dropbox.com/s/9hjyd2hv3n6t9to/Stata3.pdf?dl=1)
+- [Exercise 3](https://www.dropbox.com/s/9hjyd2hv3n6t9to/Stata3.pdf?dl=1))
 
 ### R
 - [Introduction](https://www.dropbox.com/s/57zbl4d72w60yae/01-Intro.pdf?dl=1)
