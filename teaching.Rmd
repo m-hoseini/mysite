@@ -17,8 +17,8 @@ output: html_document
 
 ### Master
 - [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
-- Consumer theory  [part 1](https://www.dropbox.com/s/620b88rab04h6dz/Consumer1.pdf?dl=1) | [part 2](https://www.dropbox.com/s/70okj0cdljjr9tw/consumer2.pdf?dl=1)
-- Uncertainty
+- Consumer theory  [part 1](https://www.dropbox.com/s/620b88rab04h6dz/Consumer1.pdf?dl=1) | [part 2](https://www.dropbox.com/s/70okj0cdljjr9tw/consumer2.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/ehb9y1lls6egsnv/consumer3.pdf?dl=) | [part 4](https://www.dropbox.com/s/2jqco1oswal4uxs/consumer4.pdf?dl=1) | [part 5](https://www.dropbox.com/s/5borl5tgr3cwdyw/consumer5.pdf?dl=1)
+- Uncertainty [part 1](https://www.dropbox.com/s/xvtwsrt6xibc5tz/risk1.pdf?dl=1) |
 - Theory of the Firm
 - Equilibrium in competitive market
 
