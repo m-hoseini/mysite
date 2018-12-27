@@ -19,8 +19,8 @@ output: html_document
 - [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
 - [Consumer theory](https://www.dropbox.com/s/pxqtqo9rk9k8ojc/CONSUMER.pdf?dl=1) 
 - [Uncertainty](https://www.dropbox.com/s/itzp0ic92oye8m4/risk.pdf?dl=1)
-- Theory of the Firm
-- Equilibrium in competitive market
+- [Theory of the Firm](https://www.dropbox.com/s/76zv8340vf0wpkp/firm.pdf?dl=1)
+- [Partial equilibrium](https://www.dropbox.com/s/vxkp12oo535ai1l/partial%20equilibrium.pdf?dl=1)
 
 ## Development economics {.tabset .tabset-fade .tabset-fade}
 
