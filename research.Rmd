@@ -7,17 +7,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## working papers
-- __Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages__ [link](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2291867)
+- __Trade credit and access to finance of retailers in Ethiopia,__ with Thorsten Beck and Burak Uras [link](https://assets.publishing.service.gov.uk/media/5aaa440fed915d4f595c5a67/Beck_et_al_Trade_credit_in_Ethiopia.pdf) (forthcoming in _Journal of African Economies_)
 
-- __Finance and Poverty: Evidence from India,__ with Meghana Ayyagari and Thorsten Beck [link](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2275150),  [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance)
+## Working Papers
+- __Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages__  [link](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2291867) 
+
+- __Finance and Poverty: Evidence from India,__ with Meghana Ayyagari and Thorsten Beck [link](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2275150), [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance) 
 
 
 - __Informality and Access to Finance: Evidence from India,__ with Thorsten Beck [link](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2491466)
 
 - __Misreporting of VAT and Optimal Enforcement__ [link](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505998)
 
-- __Trade credit and access to finance of retailers in Ethiopia,__ with Thorsten Beck and Burak Uras [link](https://assets.publishing.service.gov.uk/media/5aaa440fed915d4f595c5a67/Beck_et_al_Trade_credit_in_Ethiopia.pdf)
 
 - __VAT reform, Distortions, and Informality: Evidence from Indian States,__ with Oceane Briand.
 

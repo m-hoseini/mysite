@@ -11,21 +11,21 @@ __Mohammad Hoseini__
 - __Email:__ mo.hoseini at imps.ac.ir 
 
 
-- __Primary fields:__ Public economics, Development Economics  
+- __Primary fields:__ Development Economics, Public economics
 
     	
 ## Professional experience
 - _2016-present_ __Assistant Professor of Economics__, Institute for Management and Planning Studies (IMPS).
-- _2014-2016_ __Post-doctoral Researcher__, Tilburg University (in the DFID-funded projection on productivity growth in developing countries).
+- _2015-2016_ __Post-doctoral Researcher__, Tilburg University (in the DFID-funded projection on productivity growth in developing countries).
 
 ## Education
-- 2011-2014 __Ph.D. in Economics__, Tilburg University.
+- 2011-2015 __Ph.D. in Economics__, Tilburg University.
 - 2009-2011 __Research Master (M.Phil) in Economics__, Tilburg University.
 - 2006-2009 __M.Sc. in Economics__, Sharif University of Technology.
 - 2002-2006 __B.Sc. in Electrical Engineering__, Sharif University of Technology, Tehran, Iran.
 
 ## Working papers
-- Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages
+- Value-Added Tax, Input-output Linkages and Informality
 - Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck
 - Informality and Access to Finance: Evidence from India, with Thorsten Beck
 - Misreporting of VAT and Optimal Enforcement
