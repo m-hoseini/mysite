@@ -52,7 +52,9 @@ output: html_document
 
 ### Master
 
-- [Introduction]()
+- [Introduction](https://www.dropbox.com/s/xqdwc1fe80ayjrv/introduction.pdf?dl=1)
+- [Regression Basics](https://www.dropbox.com/s/kg52jsxpyw6tbpa/regression.pdf?dl=1)
+- [Discrete Choice Models]()
 
 
 ## Statistical softwares {.tabset .tabset-fade .tabset-fade}
