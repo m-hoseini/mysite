@@ -37,11 +37,15 @@ output: html_document
 
 - Labor market: [part 1](https://www.dropbox.com/s/wy8sk9rds6mflty/DevMSC13.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/9a5ofrtccalgrjy/DevMSC14.pdf?dl=1) |  [part 3](https://www.dropbox.com/s/5kax9dwkxgdtbs8/DevMSC15.pdf?dl=1)
 
+- Finance and Development: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
+
 - Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
 - [Social capital](https://www.dropbox.com/s/g4d619hy0gc2ren/DevMSC10.pdf?dl=1)
 
 - [Resource curse](https://www.dropbox.com/s/q7s3z4vfgl8a7gn/DevMSC11.pdf?dl=1)
+
+
 
 [//]: <> (## Public economics)
 [//]: <> (- [syllabus](https://www.dropbox.com/s/srfpjiz1t5l19kx/Taxation%20syllabus.docx?dl=1))    

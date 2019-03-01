@@ -11,7 +11,7 @@ __Mohammad Hoseini__
 - __Email:__ mo.hoseini at imps.ac.ir 
 
 
-- __Primary fields:__ Development Economics, Public economics
+- __Primary fields:__ Public economics, Development Economics 
 
     	
 ## Professional experience
@@ -24,16 +24,18 @@ __Mohammad Hoseini__
 - 2006-2009 __M.Sc. in Economics__, Sharif University of Technology.
 - 2002-2006 __B.Sc. in Electrical Engineering__, Sharif University of Technology, Tehran, Iran.
 
-## Working papers
+## Papers
 - Value-Added Tax, Input-output Linkages and Informality
+- Trade credit and access to finance of retailers in Ethiopia, with Thorsten Beck and Burak Uras.
 - Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck
 - Informality and Access to Finance: Evidence from India, with Thorsten Beck
 - Misreporting of VAT and Optimal Enforcement
-- Trade credit and access to finance of retailers in Ethiopia, with Thorsten Beck and Burak Uras.
 - VAT reform, Distortions, and Informality: Evidence from Indian States, with Oceane Briand.
 
 
 ## Teaching experience
+- Applied econometrics (master),  IMPS, 2019	
+- Microeconomics (master),  IMPS, 2018	
 - Development Economics (PhD),  IMPS, 2017-2018	
 - Development Economics (master), IMPS, 2017	
 - Advanced Microeconomics (PhD),  IMPS, 2016
