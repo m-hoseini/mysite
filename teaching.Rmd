@@ -53,15 +53,15 @@ output: html_document
 ### Master
 
 - [Introduction](https://www.dropbox.com/s/xqdwc1fe80ayjrv/introduction.pdf?dl=1)
-- [Regression Basics](https://www.dropbox.com/s/kg52jsxpyw6tbpa/regression.pdf?dl=1)
-- [Discrete Choice Models]()
+- [Regression Basics](https://www.dropbox.com/s/0k4qnernabw1inf/OLS.pdf?dl=1)
+- [Discrete Choice Models](https://www.dropbox.com/s/s11ogjusxxh3tz1/ML.pdf?dl=1)
 - [Causality and Selection Problem]()
 - [Matching]()
 - [Instrumental Variable]()
 - [Difference-in-difference]()
 - [Regression Discountinuity Design]()
 
-## Statistical softwares {.tabset .tabset-fade .tabset-fade}
+## R \& STATA {.tabset .tabset-fade .tabset-fade}
 
 ### STATA
 - [Introduction](rstata.html)
