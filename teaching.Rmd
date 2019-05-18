@@ -16,7 +16,7 @@ output: html_document
 - [Selection Problem & Randomized Experiments](https://www.dropbox.com/s/01fky0f94n83kqi/Experiments.pdf?dl=0)
 - [Regression and Causality](https://www.dropbox.com/s/lc6v5ph7no0au4h/CIA.pdf?dl=0)
 - [Instrumental Variable](https://www.dropbox.com/s/u57sdy307sgsphu/IV.pdf?dl=0)
-- [Panel Data]()
+- [Panel Data](https://www.dropbox.com/s/ho8cidr4i3vg0iz/PanelData.pdf?dl=0)
 - [Difference-in-difference]()
 - [Matching]()
 - [Regression Discountinuity Design]()
