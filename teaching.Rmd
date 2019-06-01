@@ -17,9 +17,9 @@ output: html_document
 - [Regression and Causality](https://www.dropbox.com/s/lc6v5ph7no0au4h/CIA.pdf?dl=0)
 - [Instrumental Variable](https://www.dropbox.com/s/u57sdy307sgsphu/IV.pdf?dl=0)
 - [Panel Data](https://www.dropbox.com/s/ho8cidr4i3vg0iz/PanelData.pdf?dl=0)
-- [Difference-in-difference]()
-- [Matching]()
-- [Regression Discountinuity Design]()
+- [Difference-in-difference](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
+- [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
+- [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
 
 ## Microeconomics {.tabset .tabset-fade .tabset-fade}
 
