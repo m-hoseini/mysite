@@ -53,7 +53,7 @@ output: html_document
 
 - Labor market: [part 1](https://www.dropbox.com/s/wy8sk9rds6mflty/DevMSC13.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/9a5ofrtccalgrjy/DevMSC14.pdf?dl=1) |  [part 3](https://www.dropbox.com/s/5kax9dwkxgdtbs8/DevMSC15.pdf?dl=1)
 
-- Finance and Development: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
+- Finance and Development: [part 1](https://www.dropbox.com/s/sdbkc81owa37lop/DevFin1.pdf?dl=0) |  [part 2](https://www.dropbox.com/s/5phixmokifhxiw9/DevFin2.pdf?dl=0)  | [part 3](https://www.dropbox.com/s/huttu8zh9iwjzu8/DevFin3.pdf?dl=0)
 
 - Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
