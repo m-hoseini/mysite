@@ -13,12 +13,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Working Papers
 
-- [__Finance and Poverty: Evidence from India__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2275150), with Meghana Ayyagari and Thorsten Beck, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance) 
+- [__Finance and Poverty: Evidence from India__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2275150), with Meghana Ayyagari and Thorsten Beck, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance) (R&R: Journal of Corporate Finance)
+
+- [__Production Effciency and Self-Enforcement under the VAT__](https://www.dropbox.com/s/l9m7iq8ss27722j/PEVAT.pdf?dl=1), with Oceane Briand  (R&R: Journal of Development Economics)
 
 - [__Informality and Access to Finance: Evidence from India__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2491466), with Thorsten Beck 
 
 - [__Misreporting of VAT and Optimal Enforcement__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505998) 
 
-
-- [__Production Effciency and Self-Enforcement under the VAT__](https://www.dropbox.com/s/l9m7iq8ss27722j/PEVAT.pdf?dl=1), with Oceane Briand
 
