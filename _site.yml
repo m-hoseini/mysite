@@ -18,6 +18,8 @@ navbar:
       href: mailto:mo.hoseini@imps.ac.ir
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/mohammad-hoseini-69420830/
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/HoseyniM
 output: 
  html_document:
   theme: journal
