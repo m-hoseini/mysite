@@ -11,9 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [__Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages__](https://onlinelibrary.wiley.com/doi/10.1111/ecca.12310), _Economica_ [download](https://www.dropbox.com/s/7d2ky4v1do9v2w6/VAT%20IO%20linkage%20and%20informality.pdf?dl=0) 
 
+- [__Finance, Law, and Poverty: Evidence from India__](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0), with Meghana Ayyagari and Thorsten Beck, forthcoming in _Journal of Corporate Finance_, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance)
+
 ## Working Papers
 
-- [__Finance and Poverty: Evidence from India__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2275150), with Meghana Ayyagari and Thorsten Beck, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance) (R&R: Journal of Corporate Finance)
 
 - [__Production Effciency and Self-Enforcement under the VAT__](https://www.dropbox.com/s/0i0kuivnlx5izmt/PE%20VAT.pdf?dl=0), with Oceane Briand  (R&R: Journal of Development Economics)
 
