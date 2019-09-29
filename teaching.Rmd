@@ -21,28 +21,7 @@ output: html_document
 - [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
 - [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
 
-## Microeconomics {.tabset .tabset-fade .tabset-fade}
-
-### PhD 
-- [Preference and choice](https://www.dropbox.com/s/jbd8thpuhzg57ao/MicroPhD1.pdf?dl=1)
-- [Consumer choice]() 
-- [Classical demand theory]()
-- [Aggregate demand]()
-- [Production]()
-- [Choice under uncertainty]()   
-
-### Master
-- [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
-- [Consumer theory](https://www.dropbox.com/s/pxqtqo9rk9k8ojc/CONSUMER.pdf?dl=1) 
-- [Uncertainty](https://www.dropbox.com/s/itzp0ic92oye8m4/risk.pdf?dl=1)
-- [Theory of the Firm](https://www.dropbox.com/s/76zv8340vf0wpkp/firm.pdf?dl=1)
-- [Partial equilibrium](https://www.dropbox.com/s/vxkp12oo535ai1l/partial%20equilibrium.pdf?dl=1)
-
 ## Development economics {.tabset .tabset-fade .tabset-fade}
-
-### PhD
-- [syllabus](https://www.dropbox.com/s/iurbfjuotqpiofy/Course%20syllabus.docx?dl=1)    
-- [slides](https://www.dropbox.com/s/ir6kgh9cm72pxnf/DevPhD.pdf?dl=1)
 
 ### Master
 - [Introduction](https://www.dropbox.com/s/l5ad5ahwdalxtq0/DevMSC1.pdf?dl=1)
@@ -61,6 +40,28 @@ output: html_document
 
 - [Resource curse](https://www.dropbox.com/s/q7s3z4vfgl8a7gn/DevMSC11.pdf?dl=1)
 
+
+### PhD
+- [syllabus](https://www.dropbox.com/s/iurbfjuotqpiofy/Course%20syllabus.docx?dl=1)    
+- [slides](https://www.dropbox.com/s/ir6kgh9cm72pxnf/DevPhD.pdf?dl=1)
+
+
+## Microeconomics {.tabset .tabset-fade .tabset-fade}
+
+### PhD 
+- [Preference and choice](https://www.dropbox.com/s/jbd8thpuhzg57ao/MicroPhD1.pdf?dl=1)
+- [Consumer choice]() 
+- [Classical demand theory]()
+- [Aggregate demand]()
+- [Production]()
+- [Choice under uncertainty]()   
+
+### Master
+- [Introduction](https://www.dropbox.com/s/9u93c63x01qmo8z/intro.pdf?dl=1)
+- [Consumer theory](https://www.dropbox.com/s/pxqtqo9rk9k8ojc/CONSUMER.pdf?dl=1) 
+- [Uncertainty](https://www.dropbox.com/s/itzp0ic92oye8m4/risk.pdf?dl=1)
+- [Theory of the Firm](https://www.dropbox.com/s/76zv8340vf0wpkp/firm.pdf?dl=1)
+- [Partial equilibrium](https://www.dropbox.com/s/vxkp12oo535ai1l/partial%20equilibrium.pdf?dl=1)
 
 
 [//]: <> (## Public economics)
