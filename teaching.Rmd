@@ -18,15 +18,19 @@ output: html_document
 - [Instrumental Variable](https://www.dropbox.com/s/u57sdy307sgsphu/IV.pdf?dl=0)
 - [Panel Data](https://www.dropbox.com/s/ho8cidr4i3vg0iz/PanelData.pdf?dl=0)
 - [Difference-in-difference](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
-- [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
-- [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
+- [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/matching.pdf?dl=0)
+- [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/RD.pdf?dl=0)
 
 ## Development economics {.tabset .tabset-fade .tabset-fade}
 
 ### Master
-- [Introduction](https://www.dropbox.com/s/l5ad5ahwdalxtq0/DevMSC1.pdf?dl=0)
+- [Introduction](https://www.dropbox.com/s/v0a5zz4hrayb0jd/Introduction.pdf?dl=0)
 
-- [Review of empirics](https://www.dropbox.com/s/kkz2wlrbnkwc4lm/Empirics.pdf?dl=0) 
+- [Review of empirics](https://www.dropbox.com/s/fgep8qrusjh4hl9/Empirics.pdf?dl=0) 
+
+- [Industrial Policy](https://www.dropbox.com/s/o9hz44y86jjahu5/industrialpolicy.pdf?dl=0) 
+
+- Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
 - Poverty:  [part 1](https://www.dropbox.com/s/ws2g7fish0l1x5d/DevMSC5.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/cjnrrr5k7hzmbo8/DevMSC6.pdf?dl=1)
 
@@ -34,7 +38,6 @@ output: html_document
 
 - Finance and Development: [part 1](https://www.dropbox.com/s/sdbkc81owa37lop/DevFin1.pdf?dl=0) |  [part 2](https://www.dropbox.com/s/5phixmokifhxiw9/DevFin2.pdf?dl=0)  | [part 3](https://www.dropbox.com/s/huttu8zh9iwjzu8/DevFin3.pdf?dl=0)
 
-- Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
 - [Social capital](https://www.dropbox.com/s/g4d619hy0gc2ren/DevMSC10.pdf?dl=1)
 
