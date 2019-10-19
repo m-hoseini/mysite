@@ -28,7 +28,9 @@ output: html_document
 
 - [Review of empirics](https://www.dropbox.com/s/fgep8qrusjh4hl9/Empirics.pdf?dl=0) 
 
-- Industrial Policy: [part 1](https://www.dropbox.com/s/3bt3jpvf5wi9mkh/Earlytheories.pdf?dl=0)  |  [part 2](https://www.dropbox.com/s/o9hz44y86jjahu5/industrialpolicy.pdf?dl=0)
+- [Early theories](https://www.dropbox.com/s/3bt3jpvf5wi9mkh/Earlytheories.pdf?dl=0)
+
+- [Industrial Policy](https://www.dropbox.com/s/o9hz44y86jjahu5/industrialpolicy.pdf?dl=0)
 
 - Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
