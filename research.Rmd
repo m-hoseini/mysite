@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [__Finance, Law, and Poverty: Evidence from India__](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0), with Meghana Ayyagari and Thorsten Beck, forthcoming in _Journal of Corporate Finance_, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance)
 
-- [__Value-Added Tax and Shadow Economy: The Role of Input-Output Linkages__](https://onlinelibrary.wiley.com/doi/10.1111/ecca.12310) (2019), _Economica_ [download](https://www.dropbox.com/s/7d2ky4v1do9v2w6/VAT%20IO%20linkage%20and%20informality.pdf?dl=0) 
+- [__Value-Added Tax, Input-Output Linkages, and Informality__](https://onlinelibrary.wiley.com/doi/10.1111/ecca.12310) (2019), _Economica_ [download](https://www.dropbox.com/s/7d2ky4v1do9v2w6/VAT%20IO%20linkage%20and%20informality.pdf?dl=0) 
 
 - [__Trade Credit and Access to Finance of Retailers in Ethiopia__](https://academic.oup.com/jae/advance-article-abstract/doi/10.1093/jae/ejz018/5433371?redirectedFrom=fulltext) (2019), with Thorsten Beck and Burak Uras, _Journal of African Economies_  [download](https://www.dropbox.com/s/lvub486u1leu3u1/trade%20credit%20in%20Ethiopia.pdf?dl=0)
 
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [__Production Effciency and Self-Enforcement under the VAT__](https://www.dropbox.com/s/0i0kuivnlx5izmt/PE%20VAT.pdf?dl=0), with Oceane Briand  (R&R: _Journal of Development Economics_)
 
-- [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/582lxinxyeyjd27/informality%20in%20india%20June%202019.pdf?dl=0), with Thorsten Beck 
+- [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0), with Thorsten Beck 
 
 - [__Misreporting of VAT and Optimal Enforcement__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505998) 
 
