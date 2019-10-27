@@ -5,7 +5,11 @@ output:
     df_print: paged
 ---
 
-__Mohammad Hoseini__
+## [Download PDF](https://www.dropbox.com/s/v08kel12ytdpj0i/CV-Hoseini.pdf?dl=1)
+
+#
+
+### Contact information
 
 - __Address:__ Room 308, IMPS, Asgari 6, Niavaran, Tehran, Iran,  __Zip code:__ 1978911114,   
 - __Email:__ mo.hoseini at imps.ac.ir 
@@ -13,26 +17,28 @@ __Mohammad Hoseini__
 
 
     	
-## Professional experience
+### Employment
 - _2016-present_ __Assistant Professor of Economics__, Institute for Management and Planning Studies (IMPS).
 - _2015-2016_ __Post-doctoral Researcher__, Tilburg University (in the DFID-funded projection on productivity growth in developing countries).
 
-## Education
+### Education
 - 2011-2015 __Ph.D. in Economics__, Tilburg University.
 - 2009-2011 __Research Master (M.Phil) in Economics__, Tilburg University.
 - 2006-2009 __M.Sc. in Economics__, Sharif University of Technology.
 - 2002-2006 __B.Sc. in Electrical Engineering__, Sharif University of Technology, Tehran, Iran.
 
-## Working papers
-- Trade credit and access to finance of retailers in Ethiopia, with Thorsten Beck and Burak Uras.
-- Value-Added Tax, Input-output Linkages and Informality
-- Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck
-- Informality and Access to Finance: Evidence from India, with Thorsten Beck
+### Publications
+- Trade credit and access to finance of retailers in Ethiopia, with Thorsten Beck and Burak Uras (2019) _Journal of African Economies_
+- Value-Added Tax, Input-output Linkages and Informality (2019) _Economica_
+- Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck (2020) _Journal of Corporate Finance_
+
+### Working papers
 - VAT reform, Distortions, and Informality: Evidence from Indian States, with Oceane Briand.
+- Informality and Access to Finance: Evidence from India, with Thorsten Beck
 - Misreporting of VAT and Optimal Enforcement
 
 
-## Teaching experience
+### Teaching experience
 - Applied econometrics (master),  IMPS, 2019	
 - Microeconomics (master),  IMPS, 2018	
 - Development Economics (PhD),  IMPS, 2017-2018	
@@ -43,23 +49,6 @@ __Mohammad Hoseini__
 - Finance, Growth and Development, Sharif University of Technology, January 2012
 
 
-## Referee experience
-- Journal of Public Economics, Journal of Economic Growth, Journal of Banking and Finance, Journal of Planning and Budgeting
-
-## Conference/Seminar Presentation
-- Faculty Collaborative Seminar, Jinan University, Guangzhou, China, June 2018
-- Second conference on Iran's economy, Tehran, December 2017 
-- First international conference on labor market studies (also a member of scientific committee), Tehran, September 2017 
-- The Shadow Economy, Tax Evasion and Informal Labor, Warsaw, July 2017
-- Financial Sector Developments and the Performance of Entrepreneurial Firms, 7th European Banking Center Conference, October 2015
-- Design and evaluation of tax policy, Institut d'Economia de Barcelona, June 2015  
-- Workshop on Public Economics, Uppsala, May 2015 
-- Entrepreneurial Finance, Innovation and Growth, CEPR-BOF conference, Helsinki 2014 
-- EBC junior fellow workshop, Tilburg, November 2014 
-- Reforming the Public Sector, CESifo Venice Summer Institute, July 2014
-- Tax Policy and the Activities of Multinational Firms, Tubingen University, June 2014
-- Taxation, social norms and compliance, CEBID Nuremberg, March 2014 
-- ENTER PhD jamboree, Stockholm, March 2014 
-- 4th, 5th, and 7th Tilburg Development Economics Workshop, 2013, 2014, 2016 
-- Tilburg University internal seminars, 2011-2013 
+### Referee experience
+- Journal of Public Economics, Journal of Economic Growth, Journal of Banking and Finance, Economic System Research, Journal of Planning and Budgeting
 
