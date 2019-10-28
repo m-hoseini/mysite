@@ -8,7 +8,6 @@ output: html_document
 
 ## Applied Econometrics {.tabset .tabset-fade .tabset-fade}
 
-### Master
 
 - [Introduction](https://www.dropbox.com/s/xqdwc1fe80ayjrv/introduction.pdf?dl=1)
 - [Regression Basics](https://www.dropbox.com/s/0k4qnernabw1inf/OLS.pdf?dl=1)
