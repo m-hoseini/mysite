@@ -23,6 +23,8 @@ output: html_document
 ## Development economics {.tabset .tabset-fade .tabset-fade}
 
 ### Master
+Fall 2019
+
 - [Introduction](https://www.dropbox.com/s/v0a5zz4hrayb0jd/Introduction.pdf?dl=0)
 
 - [Review of empirics](https://www.dropbox.com/s/fgep8qrusjh4hl9/Empirics.pdf?dl=0) 
@@ -31,9 +33,12 @@ output: html_document
 
 - [Industrial Policy](https://www.dropbox.com/s/o9hz44y86jjahu5/industrialpolicy.pdf?dl=0)
 
+- [Poverty](https://www.dropbox.com/s/m67gm4b704adrab/poverty.pdf?dl=0) 
+
+Slides from previous years:
+
 - Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
 
-- Poverty:  [part 1](https://www.dropbox.com/s/ws2g7fish0l1x5d/DevMSC5.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/cjnrrr5k7hzmbo8/DevMSC6.pdf?dl=1)
 
 - Labor market: [part 1](https://www.dropbox.com/s/wy8sk9rds6mflty/DevMSC13.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/9a5ofrtccalgrjy/DevMSC14.pdf?dl=1) |  [part 3](https://www.dropbox.com/s/5kax9dwkxgdtbs8/DevMSC15.pdf?dl=1)
 
