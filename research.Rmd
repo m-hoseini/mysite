@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Working Papers
 
 
-- [__Production Effciency and Self-Enforcement under the VAT__](https://www.dropbox.com/s/0i0kuivnlx5izmt/PE%20VAT.pdf?dl=0), with Oceane Briand  (R&R: _Journal of Development Economics_)
+- [__VAT Reform, Distortions, and Informality: Evidence from Indian States__](https://www.dropbox.com/s/0i0kuivnlx5izmt/PE%20VAT.pdf?dl=0), with Oceane Briand  (R&R: _Journal of Development Economics_)
 
 - [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0), with Thorsten Beck 
 
