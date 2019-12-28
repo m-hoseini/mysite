@@ -2,9 +2,6 @@
 title: ""
 ---
 
-<img src="content/DSC_0998.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
-
-
-|     Welcome!                      |
-|-----------------------------------|
-|I am an assistant professor of economics at Institute for Management and Planning Studies (IMPS) in Tehran, Iran. I obtained my PhD from Tilburg University, the Netherlands. My primary fields are development economics and public economics. |
+|                  |                         Welcome!                   |
+|------------------|----------------------------------------------------|
+| <img src="content/DSC_0998.jpg" style="width:100%; border:10px solid; margin-right: 20px" align="left"> |   I am an assistant professor of economics at Institute for Management and Planning Studies (IMPS) in Tehran, Iran. I obtained my PhD from Tilburg University, the Netherlands. My primary fields are development economics and public economics.  |
