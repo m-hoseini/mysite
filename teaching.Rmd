@@ -6,20 +6,6 @@ output: html_document
 # {.tabset .tabset-pills .tabset-pills .tabset-pills}
 
 
-## Applied Econometrics {.tabset .tabset-fade .tabset-fade}
-
-
-- [Introduction](https://www.dropbox.com/s/xqdwc1fe80ayjrv/introduction.pdf?dl=1)
-- [Regression Basics](https://www.dropbox.com/s/0k4qnernabw1inf/OLS.pdf?dl=1)
-- [Discrete Choice Models](https://www.dropbox.com/s/s11ogjusxxh3tz1/ML.pdf?dl=1)
-- [Selection Problem & Randomized Experiments](https://www.dropbox.com/s/01fky0f94n83kqi/Experiments.pdf?dl=0)
-- [Regression and Causality](https://www.dropbox.com/s/lc6v5ph7no0au4h/CIA.pdf?dl=0)
-- [Instrumental Variable](https://www.dropbox.com/s/u57sdy307sgsphu/IV.pdf?dl=0)
-- [Panel Data](https://www.dropbox.com/s/ho8cidr4i3vg0iz/PanelData.pdf?dl=0)
-- [Difference-in-difference](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
-- [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/matching.pdf?dl=0)
-- [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/RD.pdf?dl=0)
-
 ## Development economics {.tabset .tabset-fade .tabset-fade}
 
 ### Master
@@ -56,6 +42,20 @@ Slides from previous years:
 ### PhD
 - [syllabus](https://www.dropbox.com/s/iurbfjuotqpiofy/Course%20syllabus.docx?dl=1)    
 - [slides](https://www.dropbox.com/s/ir6kgh9cm72pxnf/DevPhD.pdf?dl=1)
+
+## Applied Econometrics {.tabset .tabset-fade .tabset-fade}
+
+
+- [Introduction](https://www.dropbox.com/s/xqdwc1fe80ayjrv/introduction.pdf?dl=1)
+- [Regression Basics](https://www.dropbox.com/s/0k4qnernabw1inf/OLS.pdf?dl=1)
+- [Discrete Choice Models](https://www.dropbox.com/s/s11ogjusxxh3tz1/ML.pdf?dl=1)
+- [Selection Problem & Randomized Experiments](https://www.dropbox.com/s/01fky0f94n83kqi/Experiments.pdf?dl=0)
+- [Regression and Causality](https://www.dropbox.com/s/lc6v5ph7no0au4h/CIA.pdf?dl=0)
+- [Instrumental Variable](https://www.dropbox.com/s/u57sdy307sgsphu/IV.pdf?dl=0)
+- [Panel Data](https://www.dropbox.com/s/ho8cidr4i3vg0iz/PanelData.pdf?dl=0)
+- [Difference-in-difference](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
+- [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/matching.pdf?dl=0)
+- [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/RD.pdf?dl=0)
 
 
 ## Microeconomics {.tabset .tabset-fade .tabset-fade}
