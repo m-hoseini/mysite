@@ -33,7 +33,7 @@ output:
 - Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck (2020) _Journal of Corporate Finance_
 
 ### Working papers
-- VAT reform, Distortions, and Informality: Evidence from Indian States, with Oceane Briand.
+- Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India, with Oceane Briand.
 - Informality and Access to Finance: Evidence from India, with Thorsten Beck
 - Misreporting of VAT and Optimal Enforcement
 
