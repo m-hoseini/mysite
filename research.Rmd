@@ -7,8 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+- [__Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India__](https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0), with Oceane Briand,  forthcoming in _Journal of Development Economics_
 
-- [__Finance, Law, and Poverty: Evidence from India__](https://www.sciencedirect.com/science/article/pii/S0929119918308022), with Meghana Ayyagari and Thorsten Beck, forthcoming in _Journal of Corporate Finance_, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance), [download](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0)
+- [__Finance, Law, and Poverty: Evidence from India__](https://www.sciencedirect.com/science/article/pii/S0929119918308022), with Meghana Ayyagari and Thorsten Beck, (2020) _Journal of Corporate Finance_, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance), [download](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0)
 
 - [__Value-Added Tax, Input-Output Linkages, and Informality__](https://onlinelibrary.wiley.com/doi/10.1111/ecca.12310) (2019), _Economica_ [download](https://www.dropbox.com/s/7d2ky4v1do9v2w6/VAT%20IO%20linkage%20and%20informality.pdf?dl=0) 
 
@@ -18,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Working Papers
 
 
-- [__Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India__](https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0), with Oceane Briand  (R&R: _Journal of Development Economics_)
+
 
 - [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0), with Thorsten Beck 
 

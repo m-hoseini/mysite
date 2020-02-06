@@ -31,9 +31,9 @@ output:
 - Trade credit and access to finance of retailers in Ethiopia, with Thorsten Beck and Burak Uras (2019) _Journal of African Economies_
 - Value-Added Tax, Input-output Linkages and Informality (2019) _Economica_
 - Finance and Poverty: Evidence from India, with Meghana Ayyagari and Thorsten Beck (2020) _Journal of Corporate Finance_
+- Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India, with Oceane Briand. _Journal of Development Economics_
 
 ### Working papers
-- Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India, with Oceane Briand.
 - Informality and Access to Finance: Evidence from India, with Thorsten Beck
 - Misreporting of VAT and Optimal Enforcement
 
