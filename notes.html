@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153875642-1"></script>
@@ -83,9 +82,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -99,7 +96,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -109,6 +105,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -124,7 +123,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -144,6 +142,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -165,19 +200,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -259,20 +349,20 @@ $(document).ready(function () {
 </tbody>
 </table>
 <div align="right">
-<h4 id="section"><strong>تحرک شغلی در ایران ۱۳۷۵ تا ۱۳۹۵</strong> <a href="https://www.dropbox.com/s/krbffmzpivwi2y2/IGMFARSI.pdf?dl=0">لینک دریافت</a></h4>
+<h4 id="تحرک-شغلی-در-ایران-۱۳۷۵-تا-۱۳۹۵-لینک-دریافت"><strong>تحرک شغلی در ایران ۱۳۷۵ تا ۱۳۹۵</strong> <a href="https://www.dropbox.com/s/krbffmzpivwi2y2/IGMFARSI.pdf?dl=0">لینک دریافت</a></h4>
 <p>بررسی تغییرات تحرک شغلی بین نسلی مردان در ایران با استفاده از روش لانگ و فری (۲۰۱۳) و فاصله آلثام بین ماتریس های تغییر وضعیت در سال های مختلف حاکی از کاهش ملایم تحرک شغلی در بازه ۱۳۷۵-۱۳۸۵، سپس کاهش شدیدتر آن در بازه ۱۳۸۵-۱۳۹۰ است. طی ۱۳۹۰ تا ۱۳۹۵ تحرک شغلی تغییر معنی داری نداشته است. این روند با عرضه ثابت مشاغل بخش عمومی، افزایش تعداد دانشجویان، و پدیده مقطعی رشد بدون اشتغال در کشور همبستگی دارد و این سه عامل می توانند به طور بالقوه این تغییرات را توضیح دهند</p>
 <p><img src="content/IGM.png" /></p>
 <hr />
-<h4 id="section-1"><strong>بررسی عرضه و تقاضای نیروی كار زنان در بازار كار ایران </strong> <a href="https://www.dropbox.com/s/08cxt0m8qwx3uu3/final%20report.pdf?dl=1">لینک دریافت</a></h4>
+<h4 id="بررسی-عرضه-و-تقاضای-نیروی-كار-زنان-در-بازار-كار-ایران-لینک-دریافت"><strong>بررسی عرضه و تقاضای نیروی كار زنان در بازار كار ایران </strong> <a href="https://www.dropbox.com/s/08cxt0m8qwx3uu3/final%20report.pdf?dl=1">لینک دریافت</a></h4>
 <p>زنان شاغل ایرانی به چهار دسته اصلی تفکیک می شوند: ۱- شاغلان رسمیِ بخش عمومی و اغلب در آموزش و سلامت، ۲- کارکنان خانوادگی بخش کشاورزی، ۳- بافندگان فرش و دوزندگان لباس، ۴- شاغلان بخش خدمات به صورت حقوق بگیر خصوصی و یا کارکن مستقل. سطح تحصیلات زنان شاغل در دسته اول و چهارم بیشتر از دوم و سوم است. در سال های اخیر از تعداد شاغلان دسته ۲و ۳ کاسته شده اما جمعیت فعال و شاغلان دسته ۴ افزایش یافته است. در حال حاضر پیش بینی می شود که افزایش نرخ مشارکت زنان در فصول آتی ادامه دار شود، اما در صورتی که چاره ای برای خیل زنان بیکار اندیشیده نشود، تهدید خروج دائمی آنها از بازار کار و بلا استفاده ماندن سرمایه انسانی شان وجود دارد</p>
 <p><img src="content/femalelabor.png" /></p>
 <hr />
-<h4 id="section-2">مهاجرت بین استانی در ایران برای بازه ۴۵ ساله منتهی به ۱۳۹۵ <a href="https://www.dropbox.com/s/ceonn045iektfeg/migrationreport.pdf?dl=0">لینک دریافت</a></h4>
+<h4 id="مهاجرت-بین-استانی-در-ایران-برای-بازه-۴۵-ساله-منتهی-به-۱۳۹۵-لینک-دریافت">مهاجرت بین استانی در ایران برای بازه ۴۵ ساله منتهی به ۱۳۹۵ <a href="https://www.dropbox.com/s/ceonn045iektfeg/migrationreport.pdf?dl=0">لینک دریافت</a></h4>
 <p><img src="content/mig_state65-95.png" /></p>
 <hr />
-<h4 id="section-3">گزارش نظام بازتوزیع درآمد <a href="http://www.imps.ac.ir/uploads/barnamerizi-tozi-daramad.pdf">لینک دریافت</a></h4>
-<h2 id="section-4"><img src="content/incomedist.png" /></h2>
-<h4 id="section-5">تغییرات روشنایی شب در ایران ۱۳۷۱ تا ۱۳۹۲ <a href="https://youtu.be/tN4_wHqlZnI">لینک ویدیو</a></h4>
+<h4 id="گزارش-نظام-بازتوزیع-درآمد-لینک-دریافت">گزارش نظام بازتوزیع درآمد <a href="http://www.imps.ac.ir/uploads/barnamerizi-tozi-daramad.pdf">لینک دریافت</a></h4>
+<h2 id="section"><img src="content/incomedist.png" /></h2>
+<h4 id="تغییرات-روشنایی-شب-در-ایران-۱۳۷۱-تا-۱۳۹۲-لینک-ویدیو">تغییرات روشنایی شب در ایران ۱۳۷۱ تا ۱۳۹۲ <a href="https://youtu.be/tN4_wHqlZnI">لینک ویدیو</a></h4>
 <p><img src="content/nightlight.png" /></p>
 <hr />
 <p>چابکسازی در بازارکار <a href="https://www.donya-e-eqtesad.com/fa/tiny/news-3367356">دنیای اقتصاد ۱۳۹۶/۱۲/۲۶</a></p>
@@ -300,6 +390,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
