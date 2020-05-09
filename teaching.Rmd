@@ -43,18 +43,20 @@ Slides from previous years:
 - [syllabus](https://www.dropbox.com/s/iurbfjuotqpiofy/Course%20syllabus.docx?dl=1)    
 - [slides](https://www.dropbox.com/s/ir6kgh9cm72pxnf/DevPhD.pdf?dl=1)
 
-## Applied Econometrics {.tabset .tabset-fade .tabset-fade}
+## Econometrics {.tabset .tabset-fade .tabset-fade}
 
 
-- [Introduction](https://www.dropbox.com/s/xqdwc1fe80ayjrv/introduction.pdf?dl=1)
-- [Regression Basics](https://www.dropbox.com/s/0k4qnernabw1inf/OLS.pdf?dl=1)
-- [Discrete Choice Models](https://www.dropbox.com/s/s11ogjusxxh3tz1/ML.pdf?dl=1)
-- [Selection Problem & Randomized Experiments](https://www.dropbox.com/s/01fky0f94n83kqi/Experiments.pdf?dl=0)
-- [Regression and Causality](https://www.dropbox.com/s/lc6v5ph7no0au4h/CIA.pdf?dl=0)
-- [Instrumental Variable](https://www.dropbox.com/s/u57sdy307sgsphu/IV.pdf?dl=0)
-- [Panel Data](https://www.dropbox.com/s/ho8cidr4i3vg0iz/PanelData.pdf?dl=0)
+- [Introduction](https://www.dropbox.com/s/rrh8nzo805dbg5r/Lecture%201-%20introduction.pdf?dl=0)
+- [Causality](https://www.dropbox.com/s/oglm5tjuumr6x87/Lecture%202%20-%20Causality.pdf?dl=0)
+- [Regression Basics](https://www.dropbox.com/s/l48cwelmnx53yrf/Lecture%203%20-%20Regression.pdf?dl=0)
+- [Maximum Likelihood](https://www.dropbox.com/s/y0bu9u0l60ned1a/Lecture%204%20-%20MLL.pdf?dl=0)
+- [Generalized Method of Moments](https://www.dropbox.com/s/xsbztrqc9xzhf4r/Lecture%205%20-%20GMM.pdf?dl=0)
+- [Discrete Choice Models](https://www.dropbox.com/s/7k6b6eaoelvh1g2/Lecture%206%20-%20Binary%20choice%20models.pdf?dl=0)
+- [Selection Problem & Randomized Experiments](https://www.dropbox.com/s/52qmuwkcx8s9jwq/Lecture%207%20-%20Selection%20bias%2C%20experiments.pdf?dl=0)
+- [Regression and Causality](https://www.dropbox.com/s/zqdg3i9boj0dx8e/Lecture%208%20-%20Regression%20and%20causality.pdf?dl=0)
+- [Instrumental Variable](https://www.dropbox.com/s/9r1fd99oknlvcoq/Lecture%209%20-%20IV.pdf?dl=0)
+- [Panel Data](https://www.dropbox.com/s/qmyepnfoxf6vpa4/Lecture%2010%20-%20Panel%20data.pdf?dl=0)
 - [Difference-in-difference](https://www.dropbox.com/s/kuq98an531pqc7v/DiD.pdf?dl=0)
-- [Matching](https://www.dropbox.com/s/kuq98an531pqc7v/matching.pdf?dl=0)
 - [Regression Discountinuity Design](https://www.dropbox.com/s/kuq98an531pqc7v/RD.pdf?dl=0)
 
 
