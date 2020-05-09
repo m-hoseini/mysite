@@ -83,7 +83,7 @@ Slides from previous years:
 
 
 
-## R \& STATA {.tabset .tabset-fade .tabset-fade}
+## Softwares {.tabset .tabset-fade .tabset-fade}
 
 ### STATA
 - [Introduction](rstata.html)
