@@ -18,8 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Working Papers
 
-
-
+- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh 
 
 - [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0), with Thorsten Beck 
 
