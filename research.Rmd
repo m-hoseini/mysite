@@ -7,21 +7,22 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-- [__Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India__](https://doi.org/10.1016/j.jdeveco.2020.102462), with Oceane Briand, _Journal of Development Economics_, Volume 144, May 2020, 102462, [download link](https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0)
+- [__Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India__](https://doi.org/10.1016/j.jdeveco.2020.102462), with Oceane Briand, _Journal of Development Economics_, Volume 144, May 2020, 102462. [download link](https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0)
 
 
 - [__Value-Added Tax, Input-Output Linkages, and Informality__](https://onlinelibrary.wiley.com/doi/10.1111/ecca.12310), _Economica_, Volume 87, Issue 347, July 2020, Pages 813-843. [download link](https://www.dropbox.com/s/7d2ky4v1do9v2w6/VAT%20IO%20linkage%20and%20informality.pdf?dl=0)
 
 - [__Trade Credit and Access to Finance of Retailers in Ethiopia__](https://academic.oup.com/jae/advance-article-abstract/doi/10.1093/jae/ejz018/5433371?redirectedFrom=fulltext), with Thorsten Beck and Burak Uras, _Journal of African Economies_,  Volume 29, Issue 2, March 2020, Pages 146–172.  [download link](https://www.dropbox.com/s/4blvin1e4xusjx9/BeckHoseiniUras2020.pdf?dl=0)
 
-- [__Finance, Law, and Poverty: Evidence from India__](https://www.sciencedirect.com/science/article/pii/S0929119918308022), with Meghana Ayyagari and Thorsten Beck, _Journal of Corporate Finance_, Volume 60, February 2020, 101515, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance), [download link](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0)
+- [__Finance, Law, and Poverty: Evidence from India__](https://www.sciencedirect.com/science/article/pii/S0929119918308022), with Meghana Ayyagari and Thorsten Beck, _Journal of Corporate Finance_, Volume 60, February 2020, 101515. [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance), [download link](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0)
 
 ## Working Papers
-- [__Emergency loans and consumption: evidence from COVID-19 in Iran__](https://cepr.org/content/covid-economics), with Thorsten Beck, _Covid Economics_, 45, [Vox column summary](https://voxeu.org/article/emergency-loans-and-consumption-evidence-covid-19-iran)  
+- [__Emergency loans and consumption: evidence from COVID-19 in Iran__](https://cepr.org/content/covid-economics), with Thorsten Beck, _Covid Economics_, 45, [Vox column summary](https://voxeu.org/article/emergency-loans-and-consumption-evidence-covid-19-iran) 
 
-- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh 
+- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh.
 
 - [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0), with Thorsten Beck 
+
 
 - [__Misreporting of VAT and Optimal Enforcement__](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505998) 
 
