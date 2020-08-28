@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - [__Finance, Law, and Poverty: Evidence from India__](https://www.sciencedirect.com/science/article/pii/S0929119918308022), with Meghana Ayyagari and Thorsten Beck, _Journal of Corporate Finance_, Volume 60, February 2020, 101515, [Vox column summary](http://www.voxeu.org/article/migrating-out-poverty-role-finance), [download link](https://www.dropbox.com/s/rps5qr8ryzd7g02/Finance%20and%20Poverty%20in%20India-072319-MA.pdf?dl=0)
 
 ## Working Papers
+- [__Emergency loans and consumption: evidence from COVID-19 in Iran__](https://cepr.org/content/covid-economics), with Thorsten Beck, _Covid Economics_, 45, [Vox column summary](https://voxeu.org/article/emergency-loans-and-consumption-evidence-covid-19-iran)  
 
 - [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh 
 
