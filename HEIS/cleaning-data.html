@@ -24,7 +24,7 @@
 <meta name="author" content="Mohammad Hoseini and Avenia Ghazarian" />
 
 
-<meta name="date" content="2020-08-25" />
+<meta name="date" content="2020-09-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -858,7 +858,7 @@ pre[class] {
 </div>
 <div id="builiding-item-level-data" class="section level2">
 <h2><span class="header-section-number">4.6</span> Builiding item level data</h2>
-<p>Next, we merge all tables in Part 3 for getting a unique expenditure table by item for rural and urban regions. This table helps to document the trend of expenditure in different item when we will match different years with price index.</p>
+<p>Next, we merge all tables in Part 3 for getting a unique expenditure table by item for rural and urban regions. This table helps to document the trend of expenditure in different item when we will match different years with price index. The excel file “itemlabels.xlsx” includes the discription of each expenditure item in Farsi and English.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="co">###############################################</span></a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="co"># Item-level expenditure table</span></a>
 <a class="sourceLine" id="cb6-3" title="3"></a>
@@ -876,24 +876,32 @@ pre[class] {
 <a class="sourceLine" id="cb6-15" title="15">         <span class="dt">town =</span> <span class="kw">substr</span>(U98P3<span class="op">$</span>Address, <span class="dv">4</span>, <span class="dv">5</span>),</a>
 <a class="sourceLine" id="cb6-16" title="16">         <span class="dt">urban =</span> <span class="st">&quot;U&quot;</span>)</a>
 <a class="sourceLine" id="cb6-17" title="17"></a>
-<a class="sourceLine" id="cb6-18" title="18">EXP98 &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(R98P3,U98P3) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-19" title="19"><span class="st">  </span><span class="kw">rename</span>(<span class="dt">gcode =</span> DYCOL00) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-20" title="20"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">urban =</span> <span class="kw">as.factor</span>(urban)) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-21" title="21"><span class="st">  </span><span class="kw">group_by</span>(table, gcode, code, urban) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-22" title="22"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">Value =</span> <span class="kw">sum</span>(value<span class="op">*</span>weight, <span class="dt">na.rm =</span> T),</a>
-<a class="sourceLine" id="cb6-23" title="23">            <span class="dt">Kilogram =</span> <span class="kw">sum</span>(kilogram<span class="op">*</span>weight, <span class="dt">na.rm =</span> T),</a>
-<a class="sourceLine" id="cb6-24" title="24">            <span class="dt">Gram =</span> <span class="kw">sum</span>(gram<span class="op">*</span>weight, <span class="dt">na.rm =</span> T),</a>
-<a class="sourceLine" id="cb6-25" title="25">            <span class="dt">Price =</span> <span class="kw">median</span>(price, <span class="dt">na.rm =</span> T)) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-26" title="26"><span class="st">  </span><span class="kw">filter</span>(Value<span class="op">!=</span><span class="dv">0</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-27" title="27"><span class="st">  </span><span class="kw">as.data.frame</span>()</a>
-<a class="sourceLine" id="cb6-28" title="28"></a>
-<a class="sourceLine" id="cb6-29" title="29"><span class="kw">attr</span>(EXP98<span class="op">$</span>table, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;table number in Part 3&quot;</span></a>
-<a class="sourceLine" id="cb6-30" title="30"><span class="kw">attr</span>(EXP98<span class="op">$</span>gcode, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;global item code&quot;</span></a>
-<a class="sourceLine" id="cb6-31" title="31"><span class="kw">attr</span>(EXP98<span class="op">$</span>code, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;item code in this year&quot;</span></a>
-<a class="sourceLine" id="cb6-32" title="32"><span class="kw">attr</span>(EXP98<span class="op">$</span>urban, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;rural or urban&quot;</span></a>
-<a class="sourceLine" id="cb6-33" title="33"><span class="kw">attr</span>(EXP98<span class="op">$</span>Price, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;median price&quot;</span></a>
-<a class="sourceLine" id="cb6-34" title="34"></a>
-<a class="sourceLine" id="cb6-35" title="35"><span class="kw">saveRDS</span>(EXP98, <span class="st">&quot;./exported/EXP98.Rds&quot;</span>)</a></code></pre></div>
+<a class="sourceLine" id="cb6-18" title="18">itemcode &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;itemlabels.xlsx&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-19" title="19"><span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(Global)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-20" title="20"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">gcode=</span><span class="kw">ifelse</span>(<span class="kw">is.na</span>(G2),Global,Global<span class="op">*</span><span class="dv">100</span><span class="op">+</span>G2)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-21" title="21"><span class="st">  </span><span class="kw">select</span>(gcode, Label, LabelFA)</a>
+<a class="sourceLine" id="cb6-22" title="22">itemcode<span class="op">$</span>item &lt;-<span class="st"> </span><span class="kw">factor</span>(itemcode<span class="op">$</span>gcode, <span class="dt">levels =</span> itemcode<span class="op">$</span>gcode, <span class="dt">labels =</span> itemcode<span class="op">$</span>Label) <span class="co"># for Farsi labels change the last argument into &#39;labels = itemcode$LabelFA&#39;</span></a>
+<a class="sourceLine" id="cb6-23" title="23"></a>
+<a class="sourceLine" id="cb6-24" title="24">EXP98 &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(R98P3,U98P3) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-25" title="25"><span class="st">  </span><span class="kw">rename</span>(<span class="dt">gcode =</span> DYCOL00) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-26" title="26"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">urban =</span> <span class="kw">as.factor</span>(urban)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-27" title="27"><span class="st">  </span><span class="kw">group_by</span>(table, gcode, code, urban) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-28" title="28"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">Value =</span> <span class="kw">sum</span>(value<span class="op">*</span>weight, <span class="dt">na.rm =</span> T),</a>
+<a class="sourceLine" id="cb6-29" title="29">            <span class="dt">Kilogram =</span> <span class="kw">sum</span>(kilogram<span class="op">*</span>weight, <span class="dt">na.rm =</span> T),</a>
+<a class="sourceLine" id="cb6-30" title="30">            <span class="dt">Gram =</span> <span class="kw">sum</span>(gram<span class="op">*</span>weight, <span class="dt">na.rm =</span> T),</a>
+<a class="sourceLine" id="cb6-31" title="31">            <span class="dt">Price =</span> <span class="kw">median</span>(price, <span class="dt">na.rm =</span> T)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-32" title="32"><span class="st">  </span><span class="kw">filter</span>(Value<span class="op">!=</span><span class="dv">0</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-33" title="33"><span class="st">  </span><span class="kw">left_join</span>(itemcode) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-34" title="34"><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>Label, <span class="op">-</span>LabelFA) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-35" title="35"><span class="st">  </span><span class="kw">as.data.frame</span>()</a>
+<a class="sourceLine" id="cb6-36" title="36"></a>
+<a class="sourceLine" id="cb6-37" title="37"><span class="kw">attr</span>(EXP98<span class="op">$</span>table, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;table number in Part 3&quot;</span></a>
+<a class="sourceLine" id="cb6-38" title="38"><span class="kw">attr</span>(EXP98<span class="op">$</span>gcode, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;global item code&quot;</span></a>
+<a class="sourceLine" id="cb6-39" title="39"><span class="kw">attr</span>(EXP98<span class="op">$</span>code, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;item code in this year&quot;</span></a>
+<a class="sourceLine" id="cb6-40" title="40"><span class="kw">attr</span>(EXP98<span class="op">$</span>urban, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;rural or urban&quot;</span></a>
+<a class="sourceLine" id="cb6-41" title="41"><span class="kw">attr</span>(EXP98<span class="op">$</span>Price, <span class="st">&quot;label&quot;</span>) &lt;-<span class="st"> &quot;median price&quot;</span></a>
+<a class="sourceLine" id="cb6-42" title="42"></a>
+<a class="sourceLine" id="cb6-43" title="43"><span class="kw">saveRDS</span>(EXP98, <span class="st">&quot;./exported/EXP98.Rds&quot;</span>)</a></code></pre></div>
 </div>
 <div id="building-individual-level-data" class="section level2">
 <h2><span class="header-section-number">4.7</span> Building individual-level data</h2>
