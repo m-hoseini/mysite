@@ -24,7 +24,7 @@
 <meta name="author" content="Mohammad Hoseini and Avenia Ghazarian" />
 
 
-<meta name="date" content="2020-09-16" />
+<meta name="date" content="2020-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,6 +50,10 @@
 
 
 
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 <style type="text/css">
@@ -164,9 +168,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="overall-trends.html"><a href="overall-trends.html"><i class="fa fa-check"></i><b>6</b> Overall trends</a><ul>
 <li class="chapter" data-level="6.1" data-path="overall-trends.html"><a href="overall-trends.html#gas-price-reform-in-november-2019-in-iran-and-poverty"><i class="fa fa-check"></i><b>6.1</b> Gas price reform in November 2019 in Iran and poverty</a></li>
-<li class="chapter" data-level="6.2" data-path="overall-trends.html"><a href="overall-trends.html#trends-in-expenditure-items"><i class="fa fa-check"></i><b>6.2</b> Trends in expenditure items</a></li>
-<li class="chapter" data-level="6.3" data-path="overall-trends.html"><a href="overall-trends.html#trends-of-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Trends of individual level data</a></li>
-<li class="chapter" data-level="6.4" data-path="overall-trends.html"><a href="overall-trends.html#trends-of-household-level-data-over-time"><i class="fa fa-check"></i><b>6.4</b> Trends of household-level data over time</a></li>
+<li class="chapter" data-level="6.2" data-path="overall-trends.html"><a href="overall-trends.html#car-ownership-across-provinces"><i class="fa fa-check"></i><b>6.2</b> Car ownership across provinces</a></li>
+<li class="chapter" data-level="6.3" data-path="overall-trends.html"><a href="overall-trends.html#trends-in-expenditure-items"><i class="fa fa-check"></i><b>6.3</b> Trends in expenditure items</a></li>
+<li class="chapter" data-level="6.4" data-path="overall-trends.html"><a href="overall-trends.html#trends-of-individual-level-data"><i class="fa fa-check"></i><b>6.4</b> Trends of individual level data</a></li>
+<li class="chapter" data-level="6.5" data-path="overall-trends.html"><a href="overall-trends.html#trends-of-household-level-data-over-time"><i class="fa fa-check"></i><b>6.5</b> Trends of household-level data over time</a></li>
 </ul></li>
 </ul>
 
@@ -218,126 +223,505 @@ pre[class] {
 <a class="sourceLine" id="cb1-15" title="15"><span class="st">  </span><span class="kw">theme_bw</span>() <span class="op">+</span><span class="st"> </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks=</span><span class="dv">1</span><span class="op">:</span><span class="dv">12</span>)</a></code></pre></div>
 <p><img src="figures/Gasprice.png" /></p>
 </div>
+<div id="car-ownership-across-provinces" class="section level2">
+<h2><span class="header-section-number">6.2</span> Car ownership across provinces</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">library</span>(tidyverse); <span class="kw">library</span>(knitr); <span class="kw">library</span>(kableExtra)</a></code></pre></div>
+<pre><code>## Warning: package &#39;kableExtra&#39; was built under R version 4.0.2</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">setwd</span>(<span class="st">&quot;C:/Users/Mohammad/Dropbox (Personal)/Iran/HEIS&quot;</span>)</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">readRDS</span>(<span class="st">&quot;./exported/HH97.Rds&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">year=</span><span class="st">&quot;97&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="st">  </span><span class="kw">bind_rows</span>(<span class="kw">readRDS</span>(<span class="st">&quot;./exported/HH98.Rds&quot;</span>)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">year=</span><span class="kw">replace_na</span>(year,<span class="st">&quot;98&quot;</span>)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="st">  </span><span class="kw">group_by</span>(year, province) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">car_ownership=</span><span class="kw">weighted.mean</span>(vehicle,weight)<span class="op">*</span><span class="dv">100</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="st">  </span><span class="kw">pivot_wider</span>(province, <span class="dt">names_from=</span><span class="st">&quot;year&quot;</span>, <span class="dt">values_from=</span><span class="st">&quot;car_ownership&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="st">  </span><span class="kw">kable</span>(<span class="dt">caption =</span> <span class="st">&quot;Car ownership across provinces&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="st">  </span><span class="kw">kable_styling</span>(<span class="st">&quot;striped&quot;</span>, <span class="st">&quot;hover&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="st">  </span><span class="kw">scroll_box</span>(<span class="dt">height =</span> <span class="st">&quot;500px&quot;</span>)</a></code></pre></div>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; ">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 6.1: </span>Car ownership across provinces
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+province
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+97
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+98
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Markazi
+</td>
+<td style="text-align:right;">
+51.64630
+</td>
+<td style="text-align:right;">
+49.57154
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gilan
+</td>
+<td style="text-align:right;">
+36.47945
+</td>
+<td style="text-align:right;">
+35.20249
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mazandaran
+</td>
+<td style="text-align:right;">
+45.85421
+</td>
+<td style="text-align:right;">
+43.52625
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AzarbaijanSharghi
+</td>
+<td style="text-align:right;">
+43.10528
+</td>
+<td style="text-align:right;">
+43.27720
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AzarbaijanGharbi
+</td>
+<td style="text-align:right;">
+45.40959
+</td>
+<td style="text-align:right;">
+54.73390
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kermanshah
+</td>
+<td style="text-align:right;">
+43.05263
+</td>
+<td style="text-align:right;">
+42.31064
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kouzestan
+</td>
+<td style="text-align:right;">
+38.62614
+</td>
+<td style="text-align:right;">
+40.07028
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fars
+</td>
+<td style="text-align:right;">
+51.16417
+</td>
+<td style="text-align:right;">
+48.51447
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kerman
+</td>
+<td style="text-align:right;">
+55.01675
+</td>
+<td style="text-align:right;">
+54.21379
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KhorasanRazavi
+</td>
+<td style="text-align:right;">
+45.79554
+</td>
+<td style="text-align:right;">
+44.00599
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Esfahan
+</td>
+<td style="text-align:right;">
+58.29897
+</td>
+<td style="text-align:right;">
+60.19234
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SistanBalouchestan
+</td>
+<td style="text-align:right;">
+28.23147
+</td>
+<td style="text-align:right;">
+28.00504
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kordestan
+</td>
+<td style="text-align:right;">
+37.55322
+</td>
+<td style="text-align:right;">
+41.69228
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamedan
+</td>
+<td style="text-align:right;">
+43.48110
+</td>
+<td style="text-align:right;">
+38.64652
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CharmahalBakhtiari
+</td>
+<td style="text-align:right;">
+50.50325
+</td>
+<td style="text-align:right;">
+46.09934
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lorestan
+</td>
+<td style="text-align:right;">
+31.61587
+</td>
+<td style="text-align:right;">
+32.93983
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ilam
+</td>
+<td style="text-align:right;">
+44.75097
+</td>
+<td style="text-align:right;">
+44.21638
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KohkilouyeBoyerahamad
+</td>
+<td style="text-align:right;">
+29.49408
+</td>
+<td style="text-align:right;">
+33.02894
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Boushehr
+</td>
+<td style="text-align:right;">
+59.71293
+</td>
+<td style="text-align:right;">
+54.40757
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Zanjan
+</td>
+<td style="text-align:right;">
+42.13578
+</td>
+<td style="text-align:right;">
+45.73873
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Semnan
+</td>
+<td style="text-align:right;">
+50.79232
+</td>
+<td style="text-align:right;">
+52.66296
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Yazd
+</td>
+<td style="text-align:right;">
+70.21662
+</td>
+<td style="text-align:right;">
+70.79475
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hormozgan
+</td>
+<td style="text-align:right;">
+41.10113
+</td>
+<td style="text-align:right;">
+39.64233
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Tehran
+</td>
+<td style="text-align:right;">
+58.57913
+</td>
+<td style="text-align:right;">
+60.30397
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ardebil
+</td>
+<td style="text-align:right;">
+35.08313
+</td>
+<td style="text-align:right;">
+35.89254
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Qom
+</td>
+<td style="text-align:right;">
+51.77588
+</td>
+<td style="text-align:right;">
+52.62781
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Qazvin
+</td>
+<td style="text-align:right;">
+45.94644
+</td>
+<td style="text-align:right;">
+43.72430
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Golestan
+</td>
+<td style="text-align:right;">
+39.37090
+</td>
+<td style="text-align:right;">
+39.30258
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KhorasanShomali
+</td>
+<td style="text-align:right;">
+41.42278
+</td>
+<td style="text-align:right;">
+41.55714
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KhorasanJonoubi
+</td>
+<td style="text-align:right;">
+47.76810
+</td>
+<td style="text-align:right;">
+49.45761
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alborz
+</td>
+<td style="text-align:right;">
+54.43409
+</td>
+<td style="text-align:right;">
+49.62397
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <div id="trends-in-expenditure-items" class="section level2">
-<h2><span class="header-section-number">6.2</span> Trends in expenditure items</h2>
+<h2><span class="header-section-number">6.3</span> Trends in expenditure items</h2>
 <p>Results cannot be inferred for a population using a sample survey, before adjustment through a weighting system. Please note that in every result of this study we have applied the weights provided by the Statistical Center of Iran.<br />
 Here is a piece of code showing how we applied weights in plotting the share of costs:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb2-2" title="2"></a>
-<a class="sourceLine" id="cb2-3" title="3"></a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">79</span><span class="op">:</span><span class="dv">98</span>){ </a>
-<a class="sourceLine" id="cb2-5" title="5">  </a>
-<a class="sourceLine" id="cb2-6" title="6">  <span class="cf">if</span> (i <span class="op">&gt;=</span><span class="st"> </span><span class="dv">83</span>){</a>
-<a class="sourceLine" id="cb2-7" title="7">    </a>
-<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">assign</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i), <span class="kw">get</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;_Household&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb2-9" title="9"><span class="st">             </span><span class="kw">mutate</span>(<span class="dt">year =</span> <span class="kw">paste0</span>(<span class="dv">13</span>, i),</a>
-<a class="sourceLine" id="cb2-10" title="10">                    <span class="dt">tcost=</span> <span class="kw">rowSums</span>(.[<span class="dv">2</span><span class="op">:</span><span class="dv">14</span>], <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
-<a class="sourceLine" id="cb2-11" title="11">                    <span class="kw">across</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_investment),<span class="op">~</span>(.x<span class="op">/</span>tcost))) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-12" title="12"><span class="st">             </span><span class="kw">select</span>(<span class="kw">c</span>(Address<span class="op">:</span>cost_investment), weight, year))</a>
-<a class="sourceLine" id="cb2-13" title="13">    </a>
-<a class="sourceLine" id="cb2-14" title="14">    </a>
-<a class="sourceLine" id="cb2-15" title="15">  } <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb2-16" title="16">    </a>
-<a class="sourceLine" id="cb2-17" title="17">    <span class="kw">assign</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i), <span class="kw">get</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;_Household&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb2-18" title="18"><span class="st">             </span><span class="kw">mutate</span>(<span class="dt">year =</span> <span class="kw">paste0</span>(<span class="dv">13</span>, i),</a>
-<a class="sourceLine" id="cb2-19" title="19">                    <span class="dt">tcost=</span> <span class="kw">rowSums</span>(.[<span class="dv">65</span><span class="op">:</span><span class="dv">74</span>], <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
-<a class="sourceLine" id="cb2-20" title="20">                    <span class="kw">across</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_investment),<span class="op">~</span>(.x<span class="op">/</span>tcost))) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-21" title="21"><span class="st">             </span><span class="kw">select</span>(Address,<span class="kw">c</span>(cost_food<span class="op">:</span>cost_investment), weight, year))</a>
-<a class="sourceLine" id="cb2-22" title="22">    </a>
-<a class="sourceLine" id="cb2-23" title="23">  }</a>
-<a class="sourceLine" id="cb2-24" title="24">  </a>
-<a class="sourceLine" id="cb2-25" title="25">}</a>
-<a class="sourceLine" id="cb2-26" title="26"></a>
-<a class="sourceLine" id="cb2-27" title="27"></a>
-<a class="sourceLine" id="cb2-28" title="28"><span class="co"># **** Weighting System 1 ****</span></a>
-<a class="sourceLine" id="cb2-29" title="29"></a>
-<a class="sourceLine" id="cb2-30" title="30">Rural_w &lt;-<span class="st"> </span>Rural<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-31" title="31"><span class="st">  </span><span class="kw">select</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_transportation_communication))<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-32" title="32"><span class="st">  </span><span class="kw">group_by</span>(year)<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-33" title="33"><span class="st">  </span><span class="kw">summarise_at</span>(<span class="kw">vars</span>(<span class="kw">starts_with</span>(<span class="st">&#39;cost&#39;</span>)), <span class="kw">funs</span>(<span class="kw">weighted.mean</span>(., weight, <span class="dt">na.rm=</span><span class="ot">TRUE</span>)))</a>
-<a class="sourceLine" id="cb2-34" title="34"><span class="kw">names</span>(Rural_w)</a>
-<a class="sourceLine" id="cb2-35" title="35"></a>
-<a class="sourceLine" id="cb2-36" title="36"></a>
-<a class="sourceLine" id="cb2-37" title="37">rural_w &lt;-Rural_w <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-38" title="38"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="op">-</span>year,</a>
-<a class="sourceLine" id="cb2-39" title="39">               <span class="dt">names_to =</span> <span class="st">&quot;item&quot;</span>, <span class="dt">values_to=</span> <span class="st">&quot;value&quot;</span>)</a>
-<a class="sourceLine" id="cb2-40" title="40">rural_w<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(rural_w<span class="op">$</span>year)</a>
-<a class="sourceLine" id="cb2-41" title="41"><span class="kw">ggplot</span>(<span class="dt">data =</span> rural_w, <span class="kw">aes</span>(<span class="dt">x=</span>year,<span class="dt">y=</span>value,<span class="dt">color=</span>item, <span class="dt">shape=</span> item)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-42" title="42"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>()  </a>
-<a class="sourceLine" id="cb2-43" title="43"></a>
-<a class="sourceLine" id="cb2-44" title="44"><span class="co"># *** Weighting System 2 ****</span></a>
-<a class="sourceLine" id="cb2-45" title="45"></a>
-<a class="sourceLine" id="cb2-46" title="46">Rural_w2 &lt;-<span class="st"> </span>Rural <span class="op">%&gt;%</span><span class="kw">select</span>(cost_food<span class="op">:</span>cost_transportation_communication) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-47" title="47"><span class="st">  </span><span class="kw">group_by</span>(year)<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-48" title="48"><span class="st">  </span><span class="kw">summarise_at</span>(<span class="kw">vars</span>(<span class="kw">starts_with</span>(<span class="st">&#39;cost&#39;</span>)), <span class="kw">funs</span>(<span class="kw">weighted.sum</span>(., weight)))<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-49" title="49"><span class="st">  </span><span class="kw">ungroup</span>()</a>
-<a class="sourceLine" id="cb2-50" title="50"></a>
-<a class="sourceLine" id="cb2-51" title="51">rural_w2 &lt;-<span class="st"> </span>Rural_w2<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-52" title="52"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Total =</span> <span class="kw">rowSums</span>(Rural_w2[,<span class="dv">2</span><span class="op">:</span><span class="dv">16</span>], <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
-<a class="sourceLine" id="cb2-53" title="53">         <span class="kw">across</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_transportation_communication),<span class="op">~</span>(.x<span class="op">/</span>Total)))<span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-54" title="54"><span class="st">  </span><span class="kw">select</span>(<span class="kw">c</span>(year<span class="op">:</span>cost_transportation_communication)) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-55" title="55"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="op">-</span>year,</a>
-<a class="sourceLine" id="cb2-56" title="56">               <span class="dt">names_to =</span> <span class="st">&quot;item&quot;</span>, <span class="dt">values_to=</span> <span class="st">&quot;value&quot;</span>)</a>
-<a class="sourceLine" id="cb2-57" title="57"></a>
-<a class="sourceLine" id="cb2-58" title="58">rural_w2[rural_w2<span class="op">==</span><span class="dv">0</span>]&lt;-<span class="ot">NA</span></a>
-<a class="sourceLine" id="cb2-59" title="59">rural_w2<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(rural_w2<span class="op">$</span>year)</a>
-<a class="sourceLine" id="cb2-60" title="60"><span class="kw">ggplot</span>(<span class="dt">data =</span> rural_w2, <span class="kw">aes</span>(<span class="dt">x=</span>year,<span class="dt">y=</span>value,<span class="dt">color=</span>item, <span class="dt">shape=</span> item)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-61" title="61"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>()  <span class="co">#+ facet_wrap(~item, scales = &quot;free&quot;)</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">79</span><span class="op">:</span><span class="dv">98</span>){ </a>
+<a class="sourceLine" id="cb5-5" title="5">  </a>
+<a class="sourceLine" id="cb5-6" title="6">  <span class="cf">if</span> (i <span class="op">&gt;=</span><span class="st"> </span><span class="dv">83</span>){</a>
+<a class="sourceLine" id="cb5-7" title="7">    </a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="kw">assign</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i), <span class="kw">get</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;_Household&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="st">             </span><span class="kw">mutate</span>(<span class="dt">year =</span> <span class="kw">paste0</span>(<span class="dv">13</span>, i),</a>
+<a class="sourceLine" id="cb5-10" title="10">                    <span class="dt">tcost=</span> <span class="kw">rowSums</span>(.[<span class="dv">2</span><span class="op">:</span><span class="dv">14</span>], <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
+<a class="sourceLine" id="cb5-11" title="11">                    <span class="kw">across</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_investment),<span class="op">~</span>(.x<span class="op">/</span>tcost))) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="st">             </span><span class="kw">select</span>(<span class="kw">c</span>(Address<span class="op">:</span>cost_investment), weight, year))</a>
+<a class="sourceLine" id="cb5-13" title="13">    </a>
+<a class="sourceLine" id="cb5-14" title="14">    </a>
+<a class="sourceLine" id="cb5-15" title="15">  } <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb5-16" title="16">    </a>
+<a class="sourceLine" id="cb5-17" title="17">    <span class="kw">assign</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i), <span class="kw">get</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;_Household&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb5-18" title="18"><span class="st">             </span><span class="kw">mutate</span>(<span class="dt">year =</span> <span class="kw">paste0</span>(<span class="dv">13</span>, i),</a>
+<a class="sourceLine" id="cb5-19" title="19">                    <span class="dt">tcost=</span> <span class="kw">rowSums</span>(.[<span class="dv">65</span><span class="op">:</span><span class="dv">74</span>], <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
+<a class="sourceLine" id="cb5-20" title="20">                    <span class="kw">across</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_investment),<span class="op">~</span>(.x<span class="op">/</span>tcost))) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-21" title="21"><span class="st">             </span><span class="kw">select</span>(Address,<span class="kw">c</span>(cost_food<span class="op">:</span>cost_investment), weight, year))</a>
+<a class="sourceLine" id="cb5-22" title="22">    </a>
+<a class="sourceLine" id="cb5-23" title="23">  }</a>
+<a class="sourceLine" id="cb5-24" title="24">  </a>
+<a class="sourceLine" id="cb5-25" title="25">}</a>
+<a class="sourceLine" id="cb5-26" title="26"></a>
+<a class="sourceLine" id="cb5-27" title="27"></a>
+<a class="sourceLine" id="cb5-28" title="28"><span class="co"># **** Weighting System 1 ****</span></a>
+<a class="sourceLine" id="cb5-29" title="29"></a>
+<a class="sourceLine" id="cb5-30" title="30">Rural_w &lt;-<span class="st"> </span>Rural<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-31" title="31"><span class="st">  </span><span class="kw">select</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_transportation_communication))<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-32" title="32"><span class="st">  </span><span class="kw">group_by</span>(year)<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-33" title="33"><span class="st">  </span><span class="kw">summarise_at</span>(<span class="kw">vars</span>(<span class="kw">starts_with</span>(<span class="st">&#39;cost&#39;</span>)), <span class="kw">funs</span>(<span class="kw">weighted.mean</span>(., weight, <span class="dt">na.rm=</span><span class="ot">TRUE</span>)))</a>
+<a class="sourceLine" id="cb5-34" title="34"><span class="kw">names</span>(Rural_w)</a>
+<a class="sourceLine" id="cb5-35" title="35"></a>
+<a class="sourceLine" id="cb5-36" title="36"></a>
+<a class="sourceLine" id="cb5-37" title="37">rural_w &lt;-Rural_w <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-38" title="38"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="op">-</span>year,</a>
+<a class="sourceLine" id="cb5-39" title="39">               <span class="dt">names_to =</span> <span class="st">&quot;item&quot;</span>, <span class="dt">values_to=</span> <span class="st">&quot;value&quot;</span>)</a>
+<a class="sourceLine" id="cb5-40" title="40">rural_w<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(rural_w<span class="op">$</span>year)</a>
+<a class="sourceLine" id="cb5-41" title="41"><span class="kw">ggplot</span>(<span class="dt">data =</span> rural_w, <span class="kw">aes</span>(<span class="dt">x=</span>year,<span class="dt">y=</span>value,<span class="dt">color=</span>item, <span class="dt">shape=</span> item)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-42" title="42"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>()  </a>
+<a class="sourceLine" id="cb5-43" title="43"></a>
+<a class="sourceLine" id="cb5-44" title="44"><span class="co"># *** Weighting System 2 ****</span></a>
+<a class="sourceLine" id="cb5-45" title="45"></a>
+<a class="sourceLine" id="cb5-46" title="46">Rural_w2 &lt;-<span class="st"> </span>Rural <span class="op">%&gt;%</span><span class="kw">select</span>(cost_food<span class="op">:</span>cost_transportation_communication) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-47" title="47"><span class="st">  </span><span class="kw">group_by</span>(year)<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-48" title="48"><span class="st">  </span><span class="kw">summarise_at</span>(<span class="kw">vars</span>(<span class="kw">starts_with</span>(<span class="st">&#39;cost&#39;</span>)), <span class="kw">funs</span>(<span class="kw">weighted.sum</span>(., weight)))<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-49" title="49"><span class="st">  </span><span class="kw">ungroup</span>()</a>
+<a class="sourceLine" id="cb5-50" title="50"></a>
+<a class="sourceLine" id="cb5-51" title="51">rural_w2 &lt;-<span class="st"> </span>Rural_w2<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-52" title="52"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Total =</span> <span class="kw">rowSums</span>(Rural_w2[,<span class="dv">2</span><span class="op">:</span><span class="dv">16</span>], <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
+<a class="sourceLine" id="cb5-53" title="53">         <span class="kw">across</span>(<span class="kw">c</span>(cost_food<span class="op">:</span>cost_transportation_communication),<span class="op">~</span>(.x<span class="op">/</span>Total)))<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-54" title="54"><span class="st">  </span><span class="kw">select</span>(<span class="kw">c</span>(year<span class="op">:</span>cost_transportation_communication)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-55" title="55"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="op">-</span>year,</a>
+<a class="sourceLine" id="cb5-56" title="56">               <span class="dt">names_to =</span> <span class="st">&quot;item&quot;</span>, <span class="dt">values_to=</span> <span class="st">&quot;value&quot;</span>)</a>
+<a class="sourceLine" id="cb5-57" title="57"></a>
+<a class="sourceLine" id="cb5-58" title="58">rural_w2[rural_w2<span class="op">==</span><span class="dv">0</span>]&lt;-<span class="ot">NA</span></a>
+<a class="sourceLine" id="cb5-59" title="59">rural_w2<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(rural_w2<span class="op">$</span>year)</a>
+<a class="sourceLine" id="cb5-60" title="60"><span class="kw">ggplot</span>(<span class="dt">data =</span> rural_w2, <span class="kw">aes</span>(<span class="dt">x=</span>year,<span class="dt">y=</span>value,<span class="dt">color=</span>item, <span class="dt">shape=</span> item)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-61" title="61"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>()  <span class="co">#+ facet_wrap(~item, scales = &quot;free&quot;)</span></a></code></pre></div>
 <div class="figure">
 <img src="figures/Rural_W1.png" alt="Rural Aggregate Share of Costs_Weghting System 1" />
 <p class="caption">Rural Aggregate Share of Costs_Weghting System 1</p>
 </div>
 <p>Annual consumer price index (CPI) is used to adjust prices for inflation. The items in the questionnaire are matched to the ones present in the basket of CPI. We use the price index data of Central Bank of Iran which provides CPI for detailed items over time. <span style="color:red"> Here we need to present more details about CPI data like the number of categories and how we match the codes with them </span>
 Total Index is used for cases where no appropriate match is found. In cases where an item of the questionnaire matches to more than one item in the CPI basket, a weighted average of the items of CPI is used.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="kw">library</span>(readxl)</a>
-<a class="sourceLine" id="cb3-3" title="3"></a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="kw">setwd</span>(<span class="st">&quot;C:/Users/SURFACE/Documents/New&quot;</span>)</a>
-<a class="sourceLine" id="cb3-5" title="5"></a>
-<a class="sourceLine" id="cb3-6" title="6"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">76</span><span class="op">:</span><span class="dv">98</span>) {</a>
-<a class="sourceLine" id="cb3-7" title="7">  </a>
-<a class="sourceLine" id="cb3-8" title="8">  <span class="kw">load</span>(<span class="kw">paste0</span>(i, <span class="st">&quot;New.Rdata&quot;</span>))</a>
-<a class="sourceLine" id="cb3-9" title="9">   mylist[[i<span class="dv">-75</span>]]&lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;P3&quot;</span>)</a>
-<a class="sourceLine" id="cb3-10" title="10">}</a>
-<a class="sourceLine" id="cb3-11" title="11"></a>
-<a class="sourceLine" id="cb3-12" title="12"></a>
-<a class="sourceLine" id="cb3-13" title="13"><span class="kw">rm</span>(<span class="dt">list=</span><span class="kw">ls</span>()[<span class="op">!</span><span class="kw">ls</span>() <span class="op">%in%</span><span class="st"> </span>mylist])</a>
-<a class="sourceLine" id="cb3-14" title="14"></a>
-<a class="sourceLine" id="cb3-15" title="15"></a>
-<a class="sourceLine" id="cb3-16" title="16"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">76</span><span class="op">:</span><span class="dv">98</span>){ </a>
-<a class="sourceLine" id="cb3-17" title="17">  </a>
-<a class="sourceLine" id="cb3-18" title="18"><span class="kw">assign</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i), <span class="kw">get</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;P&quot;</span>, <span class="dv">3</span>)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">year =</span> <span class="kw">paste0</span>(<span class="st">&quot;13&quot;</span>, i)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(Address, year, value, DYCOL00))</a>
-<a class="sourceLine" id="cb3-19" title="19">  </a>
-<a class="sourceLine" id="cb3-20" title="20">}</a>
-<a class="sourceLine" id="cb3-21" title="21"></a>
-<a class="sourceLine" id="cb3-22" title="22"></a>
-<a class="sourceLine" id="cb3-23" title="23">globe_cpi &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;C:/HBS/globcpi.xlsx&quot;</span>)</a>
-<a class="sourceLine" id="cb3-24" title="24">globe_cpi<span class="op">$</span>DYCOL00 &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(globe_cpi<span class="op">$</span>DYCOL00)</a>
-<a class="sourceLine" id="cb3-25" title="25"></a>
-<a class="sourceLine" id="cb3-26" title="26"><span class="co"># cpi_annual.xlsx has cpicodes in the values in cells are the annual CPI.</span></a>
-<a class="sourceLine" id="cb3-27" title="27"></a>
-<a class="sourceLine" id="cb3-28" title="28">CPI_annual &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;C:/HBS/cpi_annual.xlsx&quot;</span>)</a>
-<a class="sourceLine" id="cb3-29" title="29"></a>
-<a class="sourceLine" id="cb3-30" title="30">cpi_annual &lt;-<span class="st"> </span>CPI_annual <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb3-31" title="31"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="op">-</span>cpicode, <span class="dt">names_to =</span> <span class="st">&quot;year&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;CPI&quot;</span>)</a>
-<a class="sourceLine" id="cb3-32" title="32">cpi_annual<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(cpi_annual<span class="op">$</span>year)</a>
-<a class="sourceLine" id="cb3-33" title="33"></a>
-<a class="sourceLine" id="cb3-34" title="34"></a>
-<a class="sourceLine" id="cb3-35" title="35"><span class="co"># joining tables together </span></a>
-<a class="sourceLine" id="cb3-36" title="36"></a>
-<a class="sourceLine" id="cb3-37" title="37">R90_Hcost <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>( <span class="dt">bakhsh =</span> <span class="kw">as.numeric</span>(cost_food)<span class="op">/</span><span class="kw">as.numeric</span>(year))</a>
-<a class="sourceLine" id="cb3-38" title="38"> </a>
-<a class="sourceLine" id="cb3-39" title="39">Rural_cpi &lt;-<span class="st"> </span><span class="kw">left_join</span>(Rural_p3, globe_cpi, <span class="dt">by =</span> <span class="st">&quot;DYCOL00&quot;</span>)</a>
-<a class="sourceLine" id="cb3-40" title="40">Rural_CPI &lt;-<span class="st"> </span><span class="kw">left_join</span>(Rural_cpi, cpi_annual, <span class="dt">by =</span> <span class="kw">c</span>(<span class="st">&quot;cpicode&quot;</span>, <span class="st">&quot;year&quot;</span>))</a>
-<a class="sourceLine" id="cb3-41" title="41"></a>
-<a class="sourceLine" id="cb3-42" title="42">Rural_CPI &lt;-<span class="st"> </span>Rural_CPI <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>( <span class="dt">real_value =</span> value <span class="op">/</span><span class="st"> </span>CPI)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">library</span>(readxl)</a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="kw">setwd</span>(<span class="st">&quot;C:/Users/SURFACE/Documents/New&quot;</span>)</a>
+<a class="sourceLine" id="cb6-5" title="5"></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">76</span><span class="op">:</span><span class="dv">98</span>) {</a>
+<a class="sourceLine" id="cb6-7" title="7">  </a>
+<a class="sourceLine" id="cb6-8" title="8">  <span class="kw">load</span>(<span class="kw">paste0</span>(i, <span class="st">&quot;New.Rdata&quot;</span>))</a>
+<a class="sourceLine" id="cb6-9" title="9">   mylist[[i<span class="dv">-75</span>]]&lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;P3&quot;</span>)</a>
+<a class="sourceLine" id="cb6-10" title="10">}</a>
+<a class="sourceLine" id="cb6-11" title="11"></a>
+<a class="sourceLine" id="cb6-12" title="12"></a>
+<a class="sourceLine" id="cb6-13" title="13"><span class="kw">rm</span>(<span class="dt">list=</span><span class="kw">ls</span>()[<span class="op">!</span><span class="kw">ls</span>() <span class="op">%in%</span><span class="st"> </span>mylist])</a>
+<a class="sourceLine" id="cb6-14" title="14"></a>
+<a class="sourceLine" id="cb6-15" title="15"></a>
+<a class="sourceLine" id="cb6-16" title="16"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">76</span><span class="op">:</span><span class="dv">98</span>){ </a>
+<a class="sourceLine" id="cb6-17" title="17">  </a>
+<a class="sourceLine" id="cb6-18" title="18"><span class="kw">assign</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i), <span class="kw">get</span>(<span class="kw">paste0</span>(<span class="st">&quot;R&quot;</span>, i, <span class="st">&quot;P&quot;</span>, <span class="dv">3</span>)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">year =</span> <span class="kw">paste0</span>(<span class="st">&quot;13&quot;</span>, i)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(Address, year, value, DYCOL00))</a>
+<a class="sourceLine" id="cb6-19" title="19">  </a>
+<a class="sourceLine" id="cb6-20" title="20">}</a>
+<a class="sourceLine" id="cb6-21" title="21"></a>
+<a class="sourceLine" id="cb6-22" title="22"></a>
+<a class="sourceLine" id="cb6-23" title="23">globe_cpi &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;C:/HBS/globcpi.xlsx&quot;</span>)</a>
+<a class="sourceLine" id="cb6-24" title="24">globe_cpi<span class="op">$</span>DYCOL00 &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(globe_cpi<span class="op">$</span>DYCOL00)</a>
+<a class="sourceLine" id="cb6-25" title="25"></a>
+<a class="sourceLine" id="cb6-26" title="26"><span class="co"># cpi_annual.xlsx has cpicodes in the values in cells are the annual CPI.</span></a>
+<a class="sourceLine" id="cb6-27" title="27"></a>
+<a class="sourceLine" id="cb6-28" title="28">CPI_annual &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;C:/HBS/cpi_annual.xlsx&quot;</span>)</a>
+<a class="sourceLine" id="cb6-29" title="29"></a>
+<a class="sourceLine" id="cb6-30" title="30">cpi_annual &lt;-<span class="st"> </span>CPI_annual <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-31" title="31"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="op">-</span>cpicode, <span class="dt">names_to =</span> <span class="st">&quot;year&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;CPI&quot;</span>)</a>
+<a class="sourceLine" id="cb6-32" title="32">cpi_annual<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(cpi_annual<span class="op">$</span>year)</a>
+<a class="sourceLine" id="cb6-33" title="33"></a>
+<a class="sourceLine" id="cb6-34" title="34"></a>
+<a class="sourceLine" id="cb6-35" title="35"><span class="co"># joining tables together </span></a>
+<a class="sourceLine" id="cb6-36" title="36"></a>
+<a class="sourceLine" id="cb6-37" title="37">R90_Hcost <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>( <span class="dt">bakhsh =</span> <span class="kw">as.numeric</span>(cost_food)<span class="op">/</span><span class="kw">as.numeric</span>(year))</a>
+<a class="sourceLine" id="cb6-38" title="38"> </a>
+<a class="sourceLine" id="cb6-39" title="39">Rural_cpi &lt;-<span class="st"> </span><span class="kw">left_join</span>(Rural_p3, globe_cpi, <span class="dt">by =</span> <span class="st">&quot;DYCOL00&quot;</span>)</a>
+<a class="sourceLine" id="cb6-40" title="40">Rural_CPI &lt;-<span class="st"> </span><span class="kw">left_join</span>(Rural_cpi, cpi_annual, <span class="dt">by =</span> <span class="kw">c</span>(<span class="st">&quot;cpicode&quot;</span>, <span class="st">&quot;year&quot;</span>))</a>
+<a class="sourceLine" id="cb6-41" title="41"></a>
+<a class="sourceLine" id="cb6-42" title="42">Rural_CPI &lt;-<span class="st"> </span>Rural_CPI <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>( <span class="dt">real_value =</span> value <span class="op">/</span><span class="st"> </span>CPI)</a></code></pre></div>
 </div>
 <div id="trends-of-individual-level-data" class="section level2">
-<h2><span class="header-section-number">6.3</span> Trends of individual level data</h2>
+<h2><span class="header-section-number">6.4</span> Trends of individual level data</h2>
 <p><span style="color:red"> Income, wage by gender etc. </span></p>
 </div>
 <div id="trends-of-household-level-data-over-time" class="section level2">
-<h2><span class="header-section-number">6.4</span> Trends of household-level data over time</h2>
+<h2><span class="header-section-number">6.5</span> Trends of household-level data over time</h2>
 <p><span style="color:red"> to be completed </span></p>
 
 </div>
