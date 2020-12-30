@@ -10,31 +10,27 @@ output: html_document
 
 ### Master
 
-Fall 2019
+Fall 2020
 
-- [Introduction](https://www.dropbox.com/s/v0a5zz4hrayb0jd/Introduction.pdf?dl=0)
+- [Introduction](https://www.dropbox.com/s/n1f20yshfaiyz0x/Introduction.pdf?dl=0)
 
-- [Review of empirics](https://www.dropbox.com/s/fgep8qrusjh4hl9/Empirics.pdf?dl=0) 
+- [Review of empirics](https://www.dropbox.com/s/xzx9f75xt6qdi6j/Empirics.pdf?dl=0) 
 
-- [Early theories](https://www.dropbox.com/s/3bt3jpvf5wi9mkh/Earlytheories.pdf?dl=0)
+- [Early theories](https://www.dropbox.com/s/iijaik0zn3h9xjo/Earlytheories.pdf?dl=0)
 
-- [Industrial Policy](https://www.dropbox.com/s/o9hz44y86jjahu5/industrialpolicy.pdf?dl=0)
+- [Industrial policy](https://www.dropbox.com/s/4yvnq0ybsyxc1kf/Industrialpolicy.pdf?dl=0)
 
-- [Poverty](https://www.dropbox.com/s/m67gm4b704adrab/poverty.pdf?dl=0) 
+- [Institutions](https://www.dropbox.com/s/bnwmptwcaiw0829/institutions.pdf?dl=0)
 
-- [Mobility](https://www.dropbox.com/s/x17v8nbujizfc9k/mobility.pdf?dl=0)
+- [Poverty](https://www.dropbox.com/s/nebqrk7fv8sbm9t/poverty.pdf?dl=0) 
+
+- [Mobility](https://www.dropbox.com/s/j793jf13jcdd2re/mobility.pdf?dl=0)
+
+- [Finance and development](https://www.dropbox.com/s/io68ycsb2hyl1yr/Finance.pdf?dl=0)
 
 Slides from previous years:
 
-- Institutions and growth: [part 1](https://www.dropbox.com/s/dx79esq1c9uni26/DevMSC7.pdf?dl=1) |  [part 2](https://www.dropbox.com/s/3jedwa6oenospcg/DevMSC8.pdf?dl=1)  | [part 3](https://www.dropbox.com/s/v4h5a3r2iol45a3/DevMSC9.pdf?dl=1)
-
-
 - Labor market: [part 1](https://www.dropbox.com/s/wy8sk9rds6mflty/DevMSC13.pdf?dl=1) |   [part 2](https://www.dropbox.com/s/9a5ofrtccalgrjy/DevMSC14.pdf?dl=1) |  [part 3](https://www.dropbox.com/s/5kax9dwkxgdtbs8/DevMSC15.pdf?dl=1)
-
-- Finance and Development: [part 1](https://www.dropbox.com/s/sdbkc81owa37lop/DevFin1.pdf?dl=0) |  [part 2](https://www.dropbox.com/s/5phixmokifhxiw9/DevFin2.pdf?dl=0)  | [part 3](https://www.dropbox.com/s/huttu8zh9iwjzu8/DevFin3.pdf?dl=0)
-
-
-- [Social capital](https://www.dropbox.com/s/g4d619hy0gc2ren/DevMSC10.pdf?dl=1)
 
 - [Resource curse](https://www.dropbox.com/s/q7s3z4vfgl8a7gn/DevMSC11.pdf?dl=1)
 
