@@ -22,6 +22,8 @@ navbar:
       href: https://twitter.com/HoseyniM
     - icon: fa-google fa-lg
       href: https://scholar.google.com/citations?user=JZTBu7YAAAAJ&hl=en
+    - icon: fa-telegram fa-lg
+      href: https://telegram.me/m_hoseini
 output: 
  html_document:
   theme: journal
