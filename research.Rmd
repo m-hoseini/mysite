@@ -7,6 +7,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh, _Review of Economics of the Household_, June 2021, forthcoming.
+
 - [__Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India__](https://doi.org/10.1016/j.jdeveco.2020.102462), with Oceane Briand, _Journal of Development Economics_, Volume 144, May 2020, 102462. [download link](https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0)
 
 
@@ -18,8 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Working Papers
 - [__Emergency Loans and Consumption: Evidence from COVID-19 in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3683572), with Thorsten Beck, _Covid Economics_, 45, 28 August 2020: 111-146. [Vox column summary](https://voxeu.org/article/emergency-loans-and-consumption-evidence-covid-19-iran) 
-
-- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh.
 
 - [__Informality and Access to Finance: Evidence from India__](https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0), with Thorsten Beck 
 
