@@ -13,12 +13,22 @@
 
 <title>Research</title>
 
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -45,11 +55,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -62,32 +67,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -99,10 +78,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -119,40 +94,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 61px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -180,7 +128,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -192,7 +140,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -203,10 +151,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -218,7 +179,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -346,7 +306,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -356,7 +316,7 @@ $(document).ready(function () {
 
 
 <ul>
-<li><p><a href="https://link.springer.com/article/10.1007/s11150-021-09557-8"><strong>The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran</strong></a>, with Abolmohsen Valizadeh, <em>Review of Economics of the Household</em>, June 2021, forthcoming. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980">download link</a></p></li>
+<li><p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980"><strong>The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran</strong></a>, with Abolmohsen Valizadeh, <em>Review of Economics of the Household</em>, June 2021, forthcoming.</p></li>
 <li><p><a href="https://doi.org/10.1016/j.jdeveco.2020.102462"><strong>Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India</strong></a>, with Oceane Briand, <em>Journal of Development Economics</em>, Volume 144, May 2020, 102462. <a href="https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0">download link</a></p></li>
 <li><p><a href="https://onlinelibrary.wiley.com/doi/10.1111/ecca.12310"><strong>Value-Added Tax, Input-Output Linkages, and Informality</strong></a>, <em>Economica</em>, Volume 87, Issue 347, July 2020, Pages 813-843. <a href="https://www.dropbox.com/s/7d2ky4v1do9v2w6/VAT%20IO%20linkage%20and%20informality.pdf?dl=0">download link</a></p></li>
 <li><p><a href="https://academic.oup.com/jae/advance-article-abstract/doi/10.1093/jae/ejz018/5433371?redirectedFrom=fulltext"><strong>Trade Credit and Access to Finance of Retailers in Ethiopia</strong></a>, with Thorsten Beck and Burak Uras, <em>Journal of African Economies</em>, Volume 29, Issue 2, March 2020, Pages 146–172. <a href="https://www.dropbox.com/s/4blvin1e4xusjx9/BeckHoseiniUras2020.pdf?dl=0">download link</a></p></li>
@@ -369,12 +329,6 @@ $(document).ready(function () {
 <li><p><a href="https://www.dropbox.com/s/yc2z6ufmkbpbxee/Informality%20and%20access%20to%20finance%20October2019.pdf?dl=0"><strong>Informality and Access to Finance: Evidence from India</strong></a>, with Thorsten Beck</p></li>
 <li><p><a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505998"><strong>Misreporting of VAT and Optimal Enforcement</strong></a></p></li>
 <li><p><a href="https://www.dropbox.com/s/r6n7dr7y8htz1fa/paper.pdf?dl=0"><strong>Intergenerational Occupational Mobility in Iran 1996-2016</strong></a></p></li>
-</ul>
-</div>
-<div id="data" class="section level2">
-<h2>Data</h2>
-<ul>
-<li><a href="https://m-hoseini.github.io/HEIS"><strong>Household Expenditure and Income Surveys of Iran: Introduction and data cleaning</strong></a>, with Avenia Ghazarian (in progress)</li>
 </ul>
 </div>
 
@@ -405,7 +359,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
