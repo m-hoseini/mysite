@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980), with Abolmohsen Valizadeh, _Review of Economics of the Household_, June 2021, forthcoming.
+- [__The Effect of COVID-19 Lockdown and the Subsequent Re-opening on Consumption in Iran__](https://link.springer.com/article/10.1007%2Fs11150-021-09557-8), with Abolmohsen Valizadeh, _Review of Economics of the Household_, 19, Pages 373–397, June 2021. [download link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3662980)
 
 - [__Production Efficiency and Self-enforcement in Value-Added Tax: Evidence from State-level Reform in India__](https://doi.org/10.1016/j.jdeveco.2020.102462), with Oceane Briand, _Journal of Development Economics_, Volume 144, May 2020, 102462. [download link](https://www.dropbox.com/s/n1geb256hfspahr/PE%20VAT.pdf?dl=0)
 

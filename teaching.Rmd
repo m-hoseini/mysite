@@ -47,12 +47,13 @@ Slides from previous years:
 - [Regression Basics](https://www.dropbox.com/s/l48cwelmnx53yrf/Lecture%203%20-%20Regression.pdf?dl=0)
 - [Maximum Likelihood](https://www.dropbox.com/s/y0bu9u0l60ned1a/Lecture%204%20-%20MLL.pdf?dl=0)
 - [Generalized Method of Moments](https://www.dropbox.com/s/xsbztrqc9xzhf4r/Lecture%205%20-%20GMM.pdf?dl=0)
-- [Discrete Choice Models](https://www.dropbox.com/s/7k6b6eaoelvh1g2/Lecture%206%20-%20Binary%20choice%20models.pdf?dl=0)
+- [Discrete Choice Models](https://www.dropbox.com/s/gvur1k5pvj9e1s8/Lecture%206%20-%20Binary%20choice.pdf?dl=0)
+- [Panel Data](https://www.dropbox.com/s/qmyepnfoxf6vpa4/Lecture%2010%20-%20Panel%20data.pdf?dl=0)
 - [Selection Problem & Randomized Experiments](https://www.dropbox.com/s/52qmuwkcx8s9jwq/Lecture%207%20-%20Selection%20bias%2C%20experiments.pdf?dl=0)
 - [Regression and Causality](https://www.dropbox.com/s/zqdg3i9boj0dx8e/Lecture%208%20-%20Regression%20and%20causality.pdf?dl=0)
-- [Instrumental Variable](https://www.dropbox.com/s/9r1fd99oknlvcoq/Lecture%209%20-%20IV.pdf?dl=0)
-- [Panel Data](https://www.dropbox.com/s/qmyepnfoxf6vpa4/Lecture%2010%20-%20Panel%20data.pdf?dl=0)
-- [Difference-in-difference](https://www.dropbox.com/s/sptk0rnp4ynh23t/Lecture%2011%20-%20DID.pdf?dl=0)
+- [Matching](https://www.dropbox.com/s/krs9tbwoyapj7fb/Lecture%209%20-%20Matching.pdf?dl=0)
+- [Instrumental Variable](https://www.dropbox.com/s/7g0p5nt0sg17zsu/Lecture%2010%20-%20IV.pdf?dl=0)
+- [Difference-in-difference](https://www.dropbox.com/s/l36ubogrgg8lfb0/Lecture%2011%20-%20DID.pdf?dl=0)
 - [Regression Discountinuity Design](https://www.dropbox.com/s/5156e886mw1tbgh/Lecture%2012%20-%20RD.pdf?dl=0)
 
 
